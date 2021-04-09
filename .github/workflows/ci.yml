@@ -35,7 +35,7 @@ jobs:
         cd ..
         git clone --branch version-2.03 https://github.com/IATI/IATI-Rulesets.git
         git clone --branch version-2.03 https://github.com/IATI/IATI-Schemas.git
-        git clone https://github.com/IATI/IATI-Websites.git
+        git clone --branch rel-path-to-assets https://github.com/andylolz/IATI-Websites.git
 
         cd IATI-Extra-Documentation/en
         ln -s ../../IATI-Websites/iatistandard/_templates/ ./
