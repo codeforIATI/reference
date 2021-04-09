@@ -1,3 +1,5 @@
+#!/bin/bash
+
 rm -rf IATI-Developer-Documentation
 rm -rf IATI-Guidance
 rm -rf IATI-Codelists
