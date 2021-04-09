@@ -227,6 +227,22 @@ class Schema2Doc(object):
         else:
             min_occurs = 0
 
+        extended_types = element.xpath('xsd:complexType/xsd:simpleContent/xsd:extension/@base', namespaces=namespaces)
+        extended_types = [x for x in extended_types if x.startswith('xsd:')]
+
+        if extended_types:
+            has_rules = True
+        elif element.get('type') and element.get('type').startswith('xsd:'):
+            has_rules = True
+        elif min_occurs > 0:
+            has_rules = True
+        elif minOccurs and maxOccurs:
+            has_rules = True
+        elif ruleset_text('/'.join(path.split('/')[1:]) + element_name):
+            has_rules = True
+        else:
+            has_rules = False
+
         with open('docs/' + rst_filename, 'w') as fp:
             t = self.jinja_env.get_template(self.lang + '/schema_element.rst')
             fp.write(t.render(
@@ -236,11 +252,12 @@ class Schema2Doc(object):
                 path='/'.join(path.split('/')[1:]),  # Strip e.g. activity-standard/ from the path
                 github_urls=github_urls,
                 schema_documentation=textwrap.dedent(self.schema_documentation(element, ref_element, type_element)),
-                extended_types=element.xpath('xsd:complexType/xsd:simpleContent/xsd:extension/@base', namespaces=namespaces),
+                extended_types=extended_types,
                 attributes=self.attribute_loop(element),
                 textwrap=textwrap,
                 match_codelists=match_codelists,
                 path_to_ref=path_to_ref,
+                has_rules=has_rules,
                 ruleset_text=ruleset_text,
                 childnames=[x[0] for x in children],
                 extra_docs=get_extra_docs(rst_filename),

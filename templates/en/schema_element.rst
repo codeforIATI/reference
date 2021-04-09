@@ -13,10 +13,11 @@ Definition
 
 {{schema_documentation}}
 
+{% if has_rules %}
 Rules
 ~~~~~
 {% for extended_type in extended_types %}
-{% if extended_type.startswith('xsd:') %}The text in this element must be of type {{extended_type}}.{% endif %}
+The text in this element must be of type {{extended_type}}.
 {% endfor %}
 
 {% if element.get('type') and element.get('type').startswith('xsd:') %}The text in this element must be of type {{element.get('type')}}.
@@ -46,7 +47,8 @@ This element must occur {{minOccurs}} to {{maxOccurs}} times.
 
 {{'\n\n'.join(rtext)}}
 
-{%endif%}
+{% endif %}
+{% endif %}
 
 {% if attributes %}
 Attributes
