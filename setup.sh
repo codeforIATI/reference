@@ -6,6 +6,7 @@ rm -rf IATI-Codelists
 rm -rf IATI-Extra-Documentation
 rm -rf IATI-Rulesets
 rm -rf IATI-Schemas
+unlink iatirulesets
 
 git clone https://github.com/IATI/IATI-Developer-Documentation.git
 
