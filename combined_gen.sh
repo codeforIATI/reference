@@ -6,23 +6,17 @@
 cd docs || exit 1
 
 mkdir en/developer
-cp -n ../../IATI-Developer-Documentation/*.rst en/developer
-cp -rn ../../IATI-Developer-Documentation/*/ en/developer
+cp -n ../IATI-Developer-Documentation/*.rst en/developer
+cp -rn ../IATI-Developer-Documentation/*/ en/developer
 mkdir en/guidance
-cp -n ../..//IATI-Guidance/en/*.rst en/guidance
-cp -rn ../../IATI-Guidance/en/*/ en/guidance
+cp -n ../IATI-Guidance/en/*.rst en/guidance
+cp -rn ../IATI-Guidance/en/*/ en/guidance
 mv en/guidance/404.rst en/
 mv en/guidance/upgrades* en/
 mv en/guidance/introduction* en/
 mv en/guidance/key-considerations* en/
 mv en/guidance/license* en/
 cp ../combined_sitemap.rst en/sitemap.rst
-
-git add .
-git commit -a -m 'Auto'
-git ls-tree -r --name-only HEAD | grep 'rst$' | while read filename; do
-    echo $'\n\n\n'"*Last updated on $(git log -1 --format="%ad" --date=short -- $filename)*" >> $filename
-done
 
 cd .. || exit 1
 ./gen_html.sh || exit $?
@@ -31,4 +25,4 @@ echo '<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.o
 find docs/en/_build/dirhtml | grep -v _static | grep index.html$ | sed 's|index.html$|</loc></url>|' | sed "s|docs/en/_build/dirhtml|<url><loc>http://`cat URL`|" >> docs/en/_build/dirhtml/sitemap.xml
 echo '</urlset>' >> docs/en/_build/dirhtml/sitemap.xml
 
-# sed -i 's/\.\.\//\//g' docs/en/_build/dirhtml/404/index.html
+sed -i 's/\.\.\//\//g' docs/en/_build/dirhtml/404/index.html
