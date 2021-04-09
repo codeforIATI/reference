@@ -80,7 +80,7 @@ def extra_extra_docs():
 
     """
     for dirname, dirs, files in os.walk('IATI-Extra-Documentation', followlinks=True):
-        if dirname.startswith('.'):
+        if dirname.startswith('IATI-Extra-Documentation/.'):
             continue
         for fname in files:
             if fname.startswith('.'):
