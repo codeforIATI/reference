@@ -46,5 +46,5 @@ jobs:
         GIT_CONFIG_EMAIL: 57559326+codeforIATIbot@users.noreply.github.com
         GITHUB_TOKEN: ${{ secrets.TOKEN }}
         BRANCH: gh-pages
-        FOLDER: docs
+        FOLDER: docs/en/_build/dirhtml
         CLEAN: true
