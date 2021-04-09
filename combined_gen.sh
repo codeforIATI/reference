@@ -18,6 +18,8 @@ mv en/guidance/key-considerations* en/
 mv en/guidance/license* en/
 cp ../combined_sitemap.rst en/sitemap.rst
 
+cp ../conf.py en/
+
 cd .. || exit 1
 ./gen_html.sh || exit $?
 
