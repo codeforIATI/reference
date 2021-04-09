@@ -1837,37 +1837,6 @@ div.pagination .wp-pagenavi span.current {
   font-size: 18px;
   color: #1a206d;
 }
-#home-icon-panels div.icon.support #community-search #zendesk_query {
-  float: left;
-  display: inline;
-  margin: 0;
-  padding: 8px 8px;
-  height: 13px;
-  width: 160px;
-  border: 1px solid #dadada;
-  border-top: 1px solid #c5c5c5;
-  vertical-align: baseline;
-  color: black;
-  font-size: 13px;
-  line-height: 13px;
-}
-#home-icon-panels div.icon.support #community-search #zendesk_submit {
-  float: left;
-  display: inline;
-  padding: 6px 12px 6px 12px;
-  background: #303030;
-  border: 1px solid #303030;
-  color: white;
-  cursor: pointer;
-  font-size: 15px;
-  line-height: 15px;
-  font-weight: bold;
-}
-#home-icon-panels div.icon.support #community-search #zendesk_submit:hover {
-  background: #cacaca;
-  border-color: #cacaca;
-  color: #303030;
-}
 
 /* = Colours
 ----------------------------------------------- */
