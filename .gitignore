@@ -1,6 +1,12 @@
 # Output HTML folders
-docs/
-docs-copy/
+/docs/
+/IATI-Codelists/
+/IATI-Developer-Documentation/
+/IATI-Extra-Documentation/
+/IATI-Guidance/
+/IATI-Rulesets/
+/IATI-Schemas/
+/iatirulesets
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
