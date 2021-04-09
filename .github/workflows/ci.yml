@@ -39,6 +39,8 @@ jobs:
         mkdir docs
     - name: Build
       run: ./combined_gen.sh
+    - name: Add a nojekyll file
+      run: touch docs/en/_build/dirhtml/.nojekyll
     - name: Deploy 🚀
       uses: JamesIves/github-pages-deploy-action@3.7.1
       with:
