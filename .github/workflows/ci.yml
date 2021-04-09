@@ -25,11 +25,14 @@ jobs:
         pip install -r requirements.txt
     - name: Install some extras
       run: |
-        git clone https://github.com/IATI/IATI-Developer-Documentation.git
+        # git clone https://github.com/IATI/IATI-Developer-Documentation.git
         # git clone https://github.com/IATI/IATI-Guidance.git
 
         git clone --branch version-2.03 https://github.com/IATI/IATI-Codelists.git
         git clone --branch version-2.03 https://github.com/IATI/IATI-Extra-Documentation.git
+        cd IATI-Extra-Documentation
+        git reset --hard 84bcc7bd
+        cd ..
         git clone --branch version-2.03 https://github.com/IATI/IATI-Rulesets.git
         git clone --branch version-2.03 https://github.com/IATI/IATI-Schemas.git
         git clone https://github.com/IATI/IATI-Websites.git
