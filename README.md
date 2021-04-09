@@ -11,5 +11,6 @@ pip install -r requirements.txt
 ## Running
 
 ```
-./setup.sh
+./reset.sh
+./combined_gen.sh
 ```
