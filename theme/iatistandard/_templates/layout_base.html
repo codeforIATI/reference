@@ -1,0 +1,338 @@
+{#
+    Derived from:
+
+    basic/layout.html
+    ~~~~~~~~~~~~~~~~~
+
+    Master layout template for Sphinx themes.
+
+    :copyright: Copyright 2007-2011 by the Sphinx team, see AUTHORS.
+    :license: BSD, see LICENSE for details.
+#}
+{%- set reldelim1 = reldelim1 is not defined and ' &raquo;' or reldelim1 %}
+{%- set reldelim2 = reldelim2 is not defined and ' |' or reldelim2 %}
+{%- set render_sidebar = (not embedded) and (not theme_nosidebar|tobool) and
+                         (sidebars != []) %}
+{%- set url_root = pathto('', 1) %}
+{# XXX necessary? #}
+{%- if url_root == '#' %}{% set url_root = '' %}{% endif %}
+
+{%- macro relbar() %}
+    <div class="related">
+      <h3>{{ _('Navigation') }}</h3>
+      <ul>
+        {%- for rellink in rellinks %}
+        <li class="right" {% if loop.first %}style="margin-right: 10px"{% endif %}>
+          <a href="{{ pathto(rellink[0]) }}" title="{{ rellink[1]|striptags|e }}"
+             {{ accesskey(rellink[2]) }}>{{ rellink[3] }}</a>
+          {%- if not loop.first %}{{ reldelim2 }}{% endif %}</li>
+        {%- endfor %}
+        {%- block rootrellink %}
+        <li><a href="{{ pathto(master_doc) }}">{{ shorttitle|e }}</a>{{ reldelim1 }}</li>
+        {%- endblock %}
+        {%- for parent in parents %}
+          <li><a href="{{ parent.link|e }}" {% if loop.last %}{{ accesskey("U") }}{% endif %}>{{ parent.title }}</a>{{ reldelim1 }}</li>
+        {%- endfor %}
+        {%- block relbaritems %} {% endblock %}
+      </ul>
+    </div>
+{%- endmacro %}
+
+{%- macro sidebar() %}
+      {%- if render_sidebar %}
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+          {%- block sidebarlogo %}
+          {%- if logo %}
+            <p class="logo"><a href="{{ pathto(master_doc) }}">
+              <img class="logo" src="{{ pathto('_static/' + logo, 1) }}" alt="Logo"/>
+            </a></p>
+          {%- endif %}
+          {%- endblock %}
+          {%- if sidebars != None %}
+            {#- new style sidebar: explicitly include/exclude templates #}
+            {%- for sidebartemplate in sidebars %}
+            {%- include sidebartemplate %}
+            {%- endfor %}
+          {%- else %}
+            {#- old style sidebars: using blocks -- should be deprecated #}
+            {%- block sidebartoc %}
+            {%- include "localtoc.html" %}
+            {%- endblock %}
+            {%- if customsidebar %}
+            {%- include customsidebar %}
+            {%- endif %}
+            {%- block sidebarsearch %}
+            {%- endblock %}
+          {%- endif %}
+        </div>
+      </div>
+      {%- endif %}
+{%- endmacro %}
+
+{%- macro css() %}
+    <link rel="stylesheet" href="{{ pathto('_static/pygments.css', 1) }}" type="text/css" />
+    {%- for cssfile in css_files %}
+    <link rel="stylesheet" href="{{ pathto(cssfile, 1) }}" type="text/css" />
+    {%- endfor %}
+{%- endmacro %}
+
+<!DOCTYPE html>
+<!--[if lt IE 7 ]> <html class="no-js ie6" lang="en-GB"> <![endif]-->
+<!--[if IE 7 ]>    <html class="no-js ie7" lang="en-GB"> <![endif]-->
+<!--[if IE 8 ]>    <html class="no-js ie8" lang="en-GB"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--> <html class="no-js" lang="en-GB"> <!--<![endif]-->
+<head>
+<meta charset="UTF-8" />
+    {%- block htmltitle %}
+    <title>{{ title|striptags|e }} | The IATI Standard</title>
+    {%- endblock %}
+    {%- if not embedded %}
+    {%- if use_opensearch %}
+    <link rel="search" type="application/opensearchdescription+xml"
+          title="{% trans docstitle=docstitle|e %}Search within {{ docstitle }}{% endtrans %}"
+          href="{{ pathto('_static/opensearch.xml', 1) }}"/>
+    {%- endif %}
+    {%- if favicon %}
+    <link rel="shortcut icon" href="{{ pathto('_static/' + favicon, 1) }}"/>
+    {%- endif %}
+    {%- endif %}
+{%- block linktags %}
+    {%- if hasdoc('about') %}
+    <link rel="author" title="{{ _('About these documents') }}" href="{{ pathto('about') }}" />
+    {%- endif %}
+    {%- if hasdoc('genindex') %}
+    <link rel="index" title="{{ _('Index') }}" href="{{ pathto('genindex') }}" />
+    {%- endif %}
+    {%- if hasdoc('search') %}
+    <link rel="search" title="{{ _('Search') }}" href="{{ pathto('search') }}" />
+    {%- endif %}
+    {%- if hasdoc('copyright') %}
+    <link rel="copyright" title="{{ _('Copyright') }}" href="{{ pathto('copyright') }}" />
+    {%- endif %}
+    <link rel="top" title="{{ docstitle|e }}" href="{{ pathto('index') }}" />
+    {%- if parents %}
+    <link rel="up" title="{{ parents[-1].title|striptags|e }}" href="{{ parents[-1].link|e }}" />
+    {%- endif %}
+    {%- if next %}
+    <link rel="next" title="{{ next.title|striptags|e }}" href="{{ next.link|e }}" />
+    {%- endif %}
+    {%- if prev %}
+    <link rel="prev" title="{{ prev.title|striptags|e }}" href="{{ prev.link|e }}" />
+    {%- endif %}
+{%- endblock %}
+{%- block extrahead %} {% endblock %}
+
+<!--[if lt IE 9]>
+<script src="{{ pathto('_static/html5.js', 1) }}" type="text/javascript"></script>
+<![endif]-->
+
+<link rel='stylesheet' id='main-stylesheet-css'  href='{{ pathto('_static/style.css', 1) }}' type='text/css' media='all' />
+<script type='text/javascript' src='{{ pathto('_static/library/js/modernizr-2.6.1.min.js', 1) }}'></script>
+<script type='text/javascript' src='{{ pathto('_static/library/js/selectivizr.min.js', 1) }}'></script>
+{{ css() }}
+
+<!-- Open Graph Tags -->
+<meta property="og:type" content="website" />
+<meta property="og:title" content="{{ title|striptags|e }}" />
+<meta property="og:site_name" content="The IATI Standard" />
+<meta name="twitter:site" content="@IATI_aid" />
+<meta name="twitter:card" content="summary" />
+<link rel="Shortcut Icon" type="image/x-icon" href="{{ pathto('_static/favicon.ico', 1) }}" />
+
+<!-- Start of IATI Zendesk Widget script -->
+  <script>/*<![CDATA[*/window.zEmbed||function(e,t){var n,o,d,i,s,a=[],r=document.createElement("iframe");window.zEmbed=function(){a.push(arguments)},window.zE=window.zE||window.zEmbed,r.src="javascript:false",r.title="",r.role="presentation",(r.frameElement||r).style.cssText="display: none",d=document.getElementsByTagName("script"),d=d[d.length-1],d.parentNode.insertBefore(r,d),i=r.contentWindow,s=i.document;try{o=s}catch(e){n=document.domain,r.src='javascript:var d=document.open();d.domain="'+n+'";void(0);',o=s}o.open()._l=function(){var o=this.createElement("script");n&&(this.domain=n),o.id="js-iframe-async",o.src=e,this.t=+new Date,this.zendeskHost=t,this.zEQueue=a,this.body.appendChild(o)},o.write('<body onload="document._l();">'),o.close()}("https://assets.zendesk.com/embeddable_framework/main.js","iati.zendesk.com");
+  /*]]>*/</script>
+  <!-- End of IATI Zendesk Widget script -->
+
+</head>
+
+
+{% if pagename == 'index' %}
+    <body class="home page page-template page-template-template-home-page-php single-author singular two-column left-sidebar">
+{% else %}
+    <body class="page page-parent page-template-default single-author singular two-column left-sidebar">
+{% endif %}
+<a id="top"></a>
+    {% block site_notice %}{% endblock %}
+    <div id="page" class="hfeed">
+    <header id="header" role="banner">
+        <div class="header-wrapper">
+            <a id="logo" href="http://iatistandard.org/"></a>
+            <span>
+
+            <form role="search" id="searchform" action="/gsearch/">
+              <input type="hidden" name="ie" value="UTF-8" />
+              <input type="text" name="q" size="31" id="s" placeholder="Search IATI Standard" />
+              <input type="submit" id="searchsubmit" name="sa" value="Search" />
+            </form>
+        </div><!-- end wrapper -->
+
+        <nav id="main-nav" class="nav" role="navigation">
+
+            <h3 class="assistive-text">Main menu</h3>
+                        <div class="skip-link"><a class="assistive-text" href="#content" title="Skip to primary content">Skip to primary content</a></div>
+            <div class="skip-link"><a class="assistive-text" href="#secondary" title="Skip to secondary content">Skip to secondary content</a></div>
+            <ul class="iati-family">
+    <li class="standard"><a href="/">IATI Standard</a></li>
+    <li class="registry"><a href="http://iatiregistry.org">IATI Data</a></li>
+    <li class="community"><a href="http://discuss.iatistandard.org/t/welcome-to-iati-discuss/">IATI Community</a></li>
+</ul>
+<ul id="menu-primary-navigation" class="menu-main">
+    <li class="menu-item menu-item-type-post_type menu-item-object-page {% if pagename.startswith('introduction') %}current-menu-item{% endif %}">
+        <a href="{{ pathto('introduction') }}">Introduction</a>
+    </li>
+    <li class="menu-item menu-item-type-post_type menu-item-object-page {% if pagename.startswith('guidance') %}current-menu-item{% endif %}">
+        <a href="{{ pathto('guidance') }}">Guidance</a>
+    </li>
+    <li class="menu-item menu-item-type-post_type menu-item-object-page {% if pagename.startswith('reference') or pagename.startswith('organisation-identifiers') or pagename.startswith('activity-standard') or pagename.startswith('organisation-standard') or pagename.startswith('codelists') or pagename.startswith('schema') %}current-menu-item{% endif %}">
+        <a title="Reference" href="{{ pathto('reference') }}">Reference</a>
+    </li>
+    <li class="menu-item menu-item-type-post_type menu-item-object-page {% if pagename.startswith('upgrades') %}current-menu-item{% endif %}">
+        <a href="{{ pathto('upgrades') }}">Upgrades</a>
+    </li>
+    <li class="menu-item menu-item-type-post_type menu-item-object-page {% if pagename.startswith('developer') %}current-menu-item{% endif %}">
+        <a href="{{ pathto('developer') }}">Developers</a>
+    </li>
+</ul>        </nav>
+
+    </div><!-- end header -->
+
+    <div id="page-content">
+
+                <div id="nav-breadcrumbs">
+            <!-- Breadcrumb NavXT 4.4.0 -->
+<!--<a title="Go to The IATI Standard." href="http://iatistandard.org" class="home">The IATI Standard</a> &gt; The IATI Activities Standard-->        </div><!--.breadcrumbs -->
+
+
+{%- block content %}
+        <div id="main">
+        {% if pagename == 'index' %}
+            <div id="home-strapline">
+                <h1>IATI Standard is a technical publishing framework allowing data to be compared. This site gives detail on the standard, how to implement it and provides guidance.</h1>
+            </div>
+        {% else %}
+            {% if pagename != 'activity-standard/summary-table' and pagename != 'organisation-standard/summary-table' %}
+		<div id="primary">
+			<div id="content" role="main">
+            {% endif %}
+
+
+
+<article class="page type-page status-publish hentry">
+	<div class="entry-content">
+  {%- block document %}
+      <div class="documentwrapper">
+      {%- if render_sidebar %}
+        <div class="bodywrapper">
+      {%- endif %}
+          <div class="body">
+            {% block body %} {% endblock %}
+          </div>
+      {%- if render_sidebar %}
+        </div>
+      {%- endif %}
+      </div>
+  {%- endblock %}
+</article>
+
+            {% if pagename != 'activity-standard/summary-table' and pagename != 'organisation-standard/summary-table' %}
+			</div><!-- #content -->
+
+		</div><!-- #primary -->
+
+<div id="secondary" class="widget-area" role="complementary">
+    <aside id="pages-3" class="widget-1 widget-first widget-odd widget widget_pages"><h3 class="widget-title">Pages</h3>
+  {%- block sidebar2 %} {{ sidebar() }} {% endblock %}
+		</aside></div>
+            {% endif %}
+        {% endif %}
+</div><!--#page-content -->
+</div><!--#page -->
+{%- endblock %}
+
+<div id="pre-footer">
+    {% if pagename == 'index' %}
+        <div id="home-icon-panels">
+            <div class="icon started">
+                <h2><a title="Getting Started" href="introduction/">Getting Started</a></h2>
+        <ul>
+ <li><a title="Introduction" href="introduction/">Introduction</a></li>
+<li><a title="Key Considerations" href="introduction/key-considerations/">Key Considerations</a></li>
+<li><a title="Preparing your organisation" href="guidance/how-to-publish/prepare-your-org/">Preparing your organisation</a></li>
+<li><a title="Tools" href="guidance/how-to-publish/select-publishing-tool/">Publishing tools</a></li>
+<li><a title="Updating IATI data" href="guidance/how-to-publish/regular-updates/">Updating IATI data</a></li>
+        </ul>
+            </div>
+            <div class="icon detail">
+                <h2><a href="reference/">IATI Reference</a></h2>
+        <ul>
+        <li><a title="The IATI Organisation Standard" href="organisation-standard/">The Organisation Standard</a></li>
+        <li><a title="The IATI Activity Standard" href="activity-standard/">The Activity Standard</a></li>
+        <li><a title="IATI Codelists" href="codelists/">Codelists</a></li>
+        <li><a title="IATI Schema" href="schema/">Schema</a></li>
+<li><a title="Organisation Identifiers" href="organisation-identifiers/">Organisation identifiers</a></li>
+        </ul>
+        <p>&nbsp;</p>
+            </div>
+            <div class="icon support">
+                <h2><a title="Community Support" href="https://iatistandard.org/en/guidance/">Support</a></h2>
+        <ul>
+        <li><a title="Upgrading the IATI Standard" href="upgrades/">How the Standard is upgraded</a></li>
+<li><a title="Previous versions" href="upgrades/all-versions">Previous versions of IATI</a></li>
+        <li><a title="Developers" href="developer/">Information for developers</a></li>
+<li><a title="The IATI Datastore" href="http://datastore.iatistandard.org/docs/">The IATI Datastore</a></li>
+        </ul>
+
+        <!--        <div id="google-groups" class="box">-->
+        <!--            <a href="https://groups.google.com/forum/?fromgroups#!forum/iati-technical" target="_blank">Google groups</a>-->
+        <!--        </div>-->
+            </div>
+        </div><!--#home-icon-panels -->
+    {% endif %}
+
+    <div id="footer-links">
+        <ul>
+            <li>
+                <a href="{{ pathto('sitemap') }}">Site map</a>
+            </li>
+            <li>
+                <a href="https://iatistandard.org/en/guidance/">Support</a>
+            </li>
+            <li>
+                <a href="https://www.aidtransparency.net/privacy-policy">Privacy policy</a>
+            </li>
+        </ul>
+    </div>
+
+    <div id="footer-additional">
+        <div id="footer-cookie">
+            <aside id="text-21" class="widget-1 widget-first widget-last widget-odd widget widget_text"><h3 class="widget-title">Cookie Disclaimer</h3>			<div class="textwidget"><p>Cookies are small text files that are stored by the browser (e.g. Internet Explorer, Chrome, Firefox) on your computer or mobile phone. This site uses anonymous Analytics cookies which allow us to track how many unique individual users we have, and how often they visit the site. Unless a user signs in, these cookies cannot be used to identify an individual; they are used for statistical purposes only. If you are logged in, we will also know the details you gave to us for this, such as username and email address. By continuing to use this site, you are agreeing to the use of cookies.</p>
+</div>
+		</aside>        </div>
+        <div id="footer-social">
+            <aside id="sidebar_social_links" class="widget widget_social_links">
+    <div class="text-widget">
+        <ul class="social-links">
+            <li class="social twitter"><a href="https://twitter.com/IATI_aid">Twitter</a></li>
+        </ul>
+    </div>
+</aside>
+        </div>
+        <!--#footer-social -->
+    </div>
+</div><!--#footer-wrapper -->
+
+<footer id="footer">
+
+    <div id="footer-credits">
+        <span class="glyphicons">Text licensed under CC BY 4.0 (<a href="{{ pathto('license') }}">full copyright statement</a>). Icons from <a href="http://glyphicons.com">Glyphicons Free</a> licensed under <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a></span>
+    </div>
+    <!--.footer-inner -->
+</footer><!--#footer -->
+<script type='text/javascript' src='//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js?ver=1.8.2'></script>
+<script type='text/javascript' src='{{ pathto('_static/library/js/iati.js', 1) }}'></script>
+<script type='text/javascript' src='{{ pathto('_static/library/js/common.js', 1) }}'></script>
+    {% block extra_scripts %}{% endblock %}
+    </body>
+</html>

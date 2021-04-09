@@ -26,12 +26,9 @@ cd ..
 git clone --branch version-2.03 https://github.com/IATI/IATI-Rulesets.git
 git clone --branch version-2.03 https://github.com/IATI/IATI-Schemas.git
 
-# use a fork that has working sidebar dropdown images
-git clone --branch rel-path-to-assets https://github.com/andylolz/IATI-Websites.git
-
 cd IATI-Extra-Documentation/en
-ln -s ../../IATI-Websites/iatistandard/_templates/ ./
-ln -s ../../IATI-Websites/iatistandard/_static/ ./
+ln -s ../../theme/iatistandard/_templates/ ./
+ln -s ../../theme/iatistandard/_static/ ./
 cd ../..
 ln -s IATI-Rulesets/iatirulesets ./
 mkdir docs

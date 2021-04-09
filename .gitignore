@@ -2,9 +2,6 @@
 docs/
 docs-copy/
 
-# IATI Theme (for generating a local version of the reference HTML with full IATI branding)
-IATI-Websites/
-
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
