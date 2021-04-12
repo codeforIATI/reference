@@ -27,6 +27,15 @@ jobs:
       run: ./reset.sh
     - name: Build RST
       run: ./gen_rst.sh
+    - name: Deploy RST
+      uses: JamesIves/github-pages-deploy-action@3.7.1
+      with:
+        GIT_CONFIG_NAME: Code for IATI bot
+        GIT_CONFIG_EMAIL: 57559326+codeforIATIbot@users.noreply.github.com
+        GITHUB_TOKEN: ${{ secrets.TOKEN }}
+        BRANCH: "2.03"
+        FOLDER: docs
+        CLEAN: true
     - name: Build HTML
       run: ./gen_html.sh
     - name: Add a nojekyll file
