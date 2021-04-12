@@ -2,25 +2,6 @@
 # This script pulls in the Developer Documetnation and Guidance to build the full iatistandard.org website
 # See the README for more information
 ./gen_rst.sh || exit $?
-
-cd docs || exit 1
-
-mkdir en/developer
-cp -n ../IATI-Developer-Documentation/*.rst en/developer
-cp -rn ../IATI-Developer-Documentation/*/ en/developer
-mkdir en/guidance
-cp -n ../IATI-Guidance/en/*.rst en/guidance
-cp -rn ../IATI-Guidance/en/*/ en/guidance
-mv en/guidance/404.rst en/
-mv en/guidance/upgrades* en/
-mv en/guidance/introduction* en/
-mv en/guidance/key-considerations* en/
-mv en/guidance/license* en/
-cp ../combined_sitemap.rst en/sitemap.rst
-
-cp ../conf.py en/
-
-cd .. || exit 1
 ./gen_html.sh || exit $?
 
 echo '<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">' > docs/en/_build/dirhtml/sitemap.xml

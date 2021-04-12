@@ -25,8 +25,10 @@ jobs:
         pip install -r requirements.txt
     - name: Pull repos and prepare
       run: ./reset.sh
-    - name: Build
-      run: ./combined_gen.sh
+    - name: Build RST
+      run: ./gen_rst.sh
+    - name: Build HTML
+      run: ./gen_html.sh
     - name: Add a nojekyll file
       run: touch docs/en/_build/dirhtml/.nojekyll
     - name: Deploy 🚀
