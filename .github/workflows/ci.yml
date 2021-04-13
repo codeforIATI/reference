@@ -26,7 +26,9 @@ jobs:
     - name: Pull repos and prepare
       run: ./reset.sh
     - name: Build RST
-      run: ./gen_rst.sh
+      run: |
+        ./gen_rst.sh
+        cp requirements.txt docs
     - name: Deploy RST
       uses: JamesIves/github-pages-deploy-action@3.7.1
       with:
