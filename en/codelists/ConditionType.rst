@@ -12,6 +12,12 @@ This is a :ref:`Non-Core codelist <non_core_codelist>`.
 
 
 
+Use this codelist for
+---------------------
+
+* :ref:`iati-activities/iati-activity/conditions/condition/@type <iati-activities/iati-activity/conditions/condition/.type>`
+
+
 
 Download this codelist
 ----------------------

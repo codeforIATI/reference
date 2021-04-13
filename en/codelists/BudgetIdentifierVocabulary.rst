@@ -10,6 +10,12 @@ This is a :ref:`Non-Core codelist <non_core_codelist>`.
 
 
 
+Use this codelist for
+---------------------
+
+* :ref:`iati-activities/iati-activity/country-budget-items/@vocabulary <iati-activities/iati-activity/country-budget-items/.vocabulary>`
+
+
 
 Download this codelist
 ----------------------

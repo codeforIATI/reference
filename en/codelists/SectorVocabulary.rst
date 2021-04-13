@@ -10,6 +10,14 @@ This is a :ref:`Non-Core codelist <non_core_codelist>`.
 
 
 
+Use this codelist for
+---------------------
+
+* :ref:`iati-activities/iati-activity/sector/@vocabulary <iati-activities/iati-activity/sector/.vocabulary>`
+
+* :ref:`iati-activities/iati-activity/transaction/sector/@vocabulary <iati-activities/iati-activity/transaction/sector/.vocabulary>`
+
+
 
 Download this codelist
 ----------------------

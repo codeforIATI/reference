@@ -12,6 +12,152 @@ This is a :ref:`Replicated codelist <non_core_codelist>`.
 
 
 
+Use this codelist for
+---------------------
+
+* :ref:`iati-activities/iati-activity/reporting-org/narrative/@xml:lang <iati-activities/iati-activity/reporting-org/narrative/.xml:lang>`
+
+* :ref:`iati-activities/iati-activity/title/narrative/@xml:lang <iati-activities/iati-activity/title/narrative/.xml:lang>`
+
+* :ref:`iati-activities/iati-activity/description/narrative/@xml:lang <iati-activities/iati-activity/description/narrative/.xml:lang>`
+
+* :ref:`iati-activities/iati-activity/participating-org/narrative/@xml:lang <iati-activities/iati-activity/participating-org/narrative/.xml:lang>`
+
+* :ref:`iati-activities/iati-activity/other-identifier/owner-org/narrative/@xml:lang <iati-activities/iati-activity/other-identifier/owner-org/narrative/.xml:lang>`
+
+* :ref:`iati-activities/iati-activity/activity-date/narrative/@xml:lang <iati-activities/iati-activity/activity-date/narrative/.xml:lang>`
+
+* :ref:`iati-activities/iati-activity/contact-info/organisation/narrative/@xml:lang <iati-activities/iati-activity/contact-info/organisation/narrative/.xml:lang>`
+
+* :ref:`iati-activities/iati-activity/contact-info/department/narrative/@xml:lang <iati-activities/iati-activity/contact-info/department/narrative/.xml:lang>`
+
+* :ref:`iati-activities/iati-activity/contact-info/person-name/narrative/@xml:lang <iati-activities/iati-activity/contact-info/person-name/narrative/.xml:lang>`
+
+* :ref:`iati-activities/iati-activity/contact-info/job-title/narrative/@xml:lang <iati-activities/iati-activity/contact-info/job-title/narrative/.xml:lang>`
+
+* :ref:`iati-activities/iati-activity/contact-info/mailing-address/narrative/@xml:lang <iati-activities/iati-activity/contact-info/mailing-address/narrative/.xml:lang>`
+
+* :ref:`iati-activities/iati-activity/recipient-country/narrative/@xml:lang <iati-activities/iati-activity/recipient-country/narrative/.xml:lang>`
+
+* :ref:`iati-activities/iati-activity/recipient-region/narrative/@xml:lang <iati-activities/iati-activity/recipient-region/narrative/.xml:lang>`
+
+* :ref:`iati-activities/iati-activity/location/name/narrative/@xml:lang <iati-activities/iati-activity/location/name/narrative/.xml:lang>`
+
+* :ref:`iati-activities/iati-activity/location/description/narrative/@xml:lang <iati-activities/iati-activity/location/description/narrative/.xml:lang>`
+
+* :ref:`iati-activities/iati-activity/location/activity-description/narrative/@xml:lang <iati-activities/iati-activity/location/activity-description/narrative/.xml:lang>`
+
+* :ref:`iati-activities/iati-activity/sector/narrative/@xml:lang <iati-activities/iati-activity/sector/narrative/.xml:lang>`
+
+* :ref:`iati-activities/iati-activity/tag/narrative/@xml:lang <iati-activities/iati-activity/tag/narrative/.xml:lang>`
+
+* :ref:`iati-activities/iati-activity/country-budget-items/budget-item/description/narrative/@xml:lang <iati-activities/iati-activity/country-budget-items/budget-item/description/narrative/.xml:lang>`
+
+* :ref:`iati-activities/iati-activity/humanitarian-scope/narrative/@xml:lang <iati-activities/iati-activity/humanitarian-scope/narrative/.xml:lang>`
+
+* :ref:`iati-activities/iati-activity/policy-marker/narrative/@xml:lang <iati-activities/iati-activity/policy-marker/narrative/.xml:lang>`
+
+* :ref:`iati-activities/iati-activity/planned-disbursement/provider-org/narrative/@xml:lang <iati-activities/iati-activity/planned-disbursement/provider-org/narrative/.xml:lang>`
+
+* :ref:`iati-activities/iati-activity/planned-disbursement/receiver-org/narrative/@xml:lang <iati-activities/iati-activity/planned-disbursement/receiver-org/narrative/.xml:lang>`
+
+* :ref:`iati-activities/iati-activity/transaction/description/narrative/@xml:lang <iati-activities/iati-activity/transaction/description/narrative/.xml:lang>`
+
+* :ref:`iati-activities/iati-activity/transaction/provider-org/narrative/@xml:lang <iati-activities/iati-activity/transaction/provider-org/narrative/.xml:lang>`
+
+* :ref:`iati-activities/iati-activity/transaction/receiver-org/narrative/@xml:lang <iati-activities/iati-activity/transaction/receiver-org/narrative/.xml:lang>`
+
+* :ref:`iati-activities/iati-activity/transaction/sector/narrative/@xml:lang <iati-activities/iati-activity/transaction/sector/narrative/.xml:lang>`
+
+* :ref:`iati-activities/iati-activity/transaction/recipient-country/narrative/@xml:lang <iati-activities/iati-activity/transaction/recipient-country/narrative/.xml:lang>`
+
+* :ref:`iati-activities/iati-activity/transaction/recipient-region/narrative/@xml:lang <iati-activities/iati-activity/transaction/recipient-region/narrative/.xml:lang>`
+
+* :ref:`iati-activities/iati-activity/document-link/title/narrative/@xml:lang <iati-activities/iati-activity/document-link/title/narrative/.xml:lang>`
+
+* :ref:`iati-activities/iati-activity/document-link/description/narrative/@xml:lang <iati-activities/iati-activity/document-link/description/narrative/.xml:lang>`
+
+* :ref:`iati-activities/iati-activity/document-link/language/@code <iati-activities/iati-activity/document-link/language/.code>`
+
+* :ref:`iati-activities/iati-activity/conditions/condition/narrative/@xml:lang <iati-activities/iati-activity/conditions/condition/narrative/.xml:lang>`
+
+* :ref:`iati-activities/iati-activity/result/title/narrative/@xml:lang <iati-activities/iati-activity/result/title/narrative/.xml:lang>`
+
+* :ref:`iati-activities/iati-activity/result/description/narrative/@xml:lang <iati-activities/iati-activity/result/description/narrative/.xml:lang>`
+
+* :ref:`iati-activities/iati-activity/result/document-link/title/narrative/@xml:lang <iati-activities/iati-activity/result/document-link/title/narrative/.xml:lang>`
+
+* :ref:`iati-activities/iati-activity/result/document-link/description/narrative/@xml:lang <iati-activities/iati-activity/result/document-link/description/narrative/.xml:lang>`
+
+* :ref:`iati-activities/iati-activity/result/document-link/language/@code <iati-activities/iati-activity/result/document-link/language/.code>`
+
+* :ref:`iati-activities/iati-activity/result/indicator/title/narrative/@xml:lang <iati-activities/iati-activity/result/indicator/title/narrative/.xml:lang>`
+
+* :ref:`iati-activities/iati-activity/result/indicator/description/narrative/@xml:lang <iati-activities/iati-activity/result/indicator/description/narrative/.xml:lang>`
+
+* :ref:`iati-activities/iati-activity/result/indicator/document-link/title/narrative/@xml:lang <iati-activities/iati-activity/result/indicator/document-link/title/narrative/.xml:lang>`
+
+* :ref:`iati-activities/iati-activity/result/indicator/document-link/description/narrative/@xml:lang <iati-activities/iati-activity/result/indicator/document-link/description/narrative/.xml:lang>`
+
+* :ref:`iati-activities/iati-activity/result/indicator/document-link/language/@code <iati-activities/iati-activity/result/indicator/document-link/language/.code>`
+
+* :ref:`iati-activities/iati-activity/result/indicator/baseline/document-link/title/narrative/@xml:lang <iati-activities/iati-activity/result/indicator/baseline/document-link/title/narrative/.xml:lang>`
+
+* :ref:`iati-activities/iati-activity/result/indicator/baseline/document-link/description/narrative/@xml:lang <iati-activities/iati-activity/result/indicator/baseline/document-link/description/narrative/.xml:lang>`
+
+* :ref:`iati-activities/iati-activity/result/indicator/baseline/document-link/language/@code <iati-activities/iati-activity/result/indicator/baseline/document-link/language/.code>`
+
+* :ref:`iati-activities/iati-activity/result/indicator/baseline/comment/narrative/@xml:lang <iati-activities/iati-activity/result/indicator/baseline/comment/narrative/.xml:lang>`
+
+* :ref:`iati-activities/iati-activity/result/indicator/period/target/comment/narrative/@xml:lang <iati-activities/iati-activity/result/indicator/period/target/comment/narrative/.xml:lang>`
+
+* :ref:`iati-activities/iati-activity/result/indicator/period/target/document-link/title/narrative/@xml:lang <iati-activities/iati-activity/result/indicator/period/target/document-link/title/narrative/.xml:lang>`
+
+* :ref:`iati-activities/iati-activity/result/indicator/period/target/document-link/description/narrative/@xml:lang <iati-activities/iati-activity/result/indicator/period/target/document-link/description/narrative/.xml:lang>`
+
+* :ref:`iati-activities/iati-activity/result/indicator/period/target/document-link/language/@code <iati-activities/iati-activity/result/indicator/period/target/document-link/language/.code>`
+
+* :ref:`iati-activities/iati-activity/result/indicator/period/actual/comment/narrative/@xml:lang <iati-activities/iati-activity/result/indicator/period/actual/comment/narrative/.xml:lang>`
+
+* :ref:`iati-activities/iati-activity/result/indicator/period/actual/document-link/title/narrative/@xml:lang <iati-activities/iati-activity/result/indicator/period/actual/document-link/title/narrative/.xml:lang>`
+
+* :ref:`iati-activities/iati-activity/result/indicator/period/actual/document-link/description/narrative/@xml:lang <iati-activities/iati-activity/result/indicator/period/actual/document-link/description/narrative/.xml:lang>`
+
+* :ref:`iati-activities/iati-activity/result/indicator/period/actual/document-link/language/@code <iati-activities/iati-activity/result/indicator/period/actual/document-link/language/.code>`
+
+* :ref:`iati-activities/iati-activity/@xml:lang <iati-activities/iati-activity/.xml:lang>`
+
+* :ref:`iati-organisations/iati-organisation/name/narrative/@xml:lang <iati-organisations/iati-organisation/name/narrative/.xml:lang>`
+
+* :ref:`iati-organisations/iati-organisation/reporting-org/narrative/@xml:lang <iati-organisations/iati-organisation/reporting-org/narrative/.xml:lang>`
+
+* :ref:`iati-organisations/iati-organisation/total-budget/budget-line/narrative/@xml:lang <iati-organisations/iati-organisation/total-budget/budget-line/narrative/.xml:lang>`
+
+* :ref:`iati-organisations/iati-organisation/recipient-org-budget/recipient-org/narrative/@xml:lang <iati-organisations/iati-organisation/recipient-org-budget/recipient-org/narrative/.xml:lang>`
+
+* :ref:`iati-organisations/iati-organisation/recipient-org-budget/budget-line/narrative/@xml:lang <iati-organisations/iati-organisation/recipient-org-budget/budget-line/narrative/.xml:lang>`
+
+* :ref:`iati-organisations/iati-organisation/recipient-region-budget/recipient-region/narrative/@xml:lang <iati-organisations/iati-organisation/recipient-region-budget/recipient-region/narrative/.xml:lang>`
+
+* :ref:`iati-organisations/iati-organisation/recipient-region-budget/budget-line/narrative/@xml:lang <iati-organisations/iati-organisation/recipient-region-budget/budget-line/narrative/.xml:lang>`
+
+* :ref:`iati-organisations/iati-organisation/recipient-country-budget/recipient-country/narrative/@xml:lang <iati-organisations/iati-organisation/recipient-country-budget/recipient-country/narrative/.xml:lang>`
+
+* :ref:`iati-organisations/iati-organisation/recipient-country-budget/budget-line/narrative/@xml:lang <iati-organisations/iati-organisation/recipient-country-budget/budget-line/narrative/.xml:lang>`
+
+* :ref:`iati-organisations/iati-organisation/total-expenditure/expense-line/narrative/@xml:lang <iati-organisations/iati-organisation/total-expenditure/expense-line/narrative/.xml:lang>`
+
+* :ref:`iati-organisations/iati-organisation/document-link/recipient-country/narrative/@xml:lang <iati-organisations/iati-organisation/document-link/recipient-country/narrative/.xml:lang>`
+
+* :ref:`iati-organisations/iati-organisation/document-link/title/narrative/@xml:lang <iati-organisations/iati-organisation/document-link/title/narrative/.xml:lang>`
+
+* :ref:`iati-organisations/iati-organisation/document-link/description/narrative/@xml:lang <iati-organisations/iati-organisation/document-link/description/narrative/.xml:lang>`
+
+* :ref:`iati-organisations/iati-organisation/document-link/language/@code <iati-organisations/iati-organisation/document-link/language/.code>`
+
+* :ref:`iati-organisations/iati-organisation/@xml:lang <iati-organisations/iati-organisation/.xml:lang>`
+
+
 
 Download this codelist
 ----------------------

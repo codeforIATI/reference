@@ -10,6 +10,14 @@ This is a :ref:`Non-Core codelist <non_core_codelist>`.
 
 
 
+Use this codelist for
+---------------------
+
+* :ref:`iati-activities/iati-activity/default-tied-status/@code <iati-activities/iati-activity/default-tied-status/.code>`
+
+* :ref:`iati-activities/iati-activity/transaction/tied-status/@code <iati-activities/iati-activity/transaction/tied-status/.code>`
+
+
 
 Download this codelist
 ----------------------

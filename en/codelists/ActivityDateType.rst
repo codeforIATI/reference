@@ -19,6 +19,12 @@ This is a :ref:`Core codelist <core_codelist>`.
 
 
 
+Use this codelist for
+---------------------
+
+* :ref:`iati-activities/iati-activity/activity-date/@type <iati-activities/iati-activity/activity-date/.type>`
+
+
 
 Download this codelist
 ----------------------

@@ -12,6 +12,12 @@ This is a :ref:`Non-Core codelist <non_core_codelist>`.
 
 
 
+Use this codelist for
+---------------------
+
+* :ref:`iati-activities/iati-activity/crs-add/other-flags/@code <iati-activities/iati-activity/crs-add/other-flags/.code>`
+
+
 
 Download this codelist
 ----------------------

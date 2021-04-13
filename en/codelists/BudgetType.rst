@@ -10,6 +10,14 @@ This is a :ref:`Core codelist <core_codelist>`.
 
 
 
+Use this codelist for
+---------------------
+
+* :ref:`iati-activities/iati-activity/budget/@type <iati-activities/iati-activity/budget/.type>`
+
+* :ref:`iati-activities/iati-activity/planned-disbursement/@type <iati-activities/iati-activity/planned-disbursement/.type>`
+
+
 
 Download this codelist
 ----------------------

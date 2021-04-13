@@ -12,6 +12,12 @@ This is a :ref:`Non-Core codelist <non_core_codelist>`.
 
 
 
+Use this codelist for
+---------------------
+
+* :ref:`iati-activities/iati-activity/@budget-not-provided <iati-activities/iati-activity/.budget-not-provided>`
+
+
 
 Download this codelist
 ----------------------

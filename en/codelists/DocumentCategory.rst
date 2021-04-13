@@ -10,6 +10,24 @@ This is a :ref:`Core codelist <core_codelist>`.
 
 
 
+Use this codelist for
+---------------------
+
+* :ref:`iati-activities/iati-activity/document-link/category/@code <iati-activities/iati-activity/document-link/category/.code>`
+
+* :ref:`iati-activities/iati-activity/result/document-link/category/@code <iati-activities/iati-activity/result/document-link/category/.code>`
+
+* :ref:`iati-activities/iati-activity/result/indicator/document-link/category/@code <iati-activities/iati-activity/result/indicator/document-link/category/.code>`
+
+* :ref:`iati-activities/iati-activity/result/indicator/baseline/document-link/category/@code <iati-activities/iati-activity/result/indicator/baseline/document-link/category/.code>`
+
+* :ref:`iati-activities/iati-activity/result/indicator/period/target/document-link/category/@code <iati-activities/iati-activity/result/indicator/period/target/document-link/category/.code>`
+
+* :ref:`iati-activities/iati-activity/result/indicator/period/actual/document-link/category/@code <iati-activities/iati-activity/result/indicator/period/actual/document-link/category/.code>`
+
+* :ref:`iati-organisations/iati-organisation/document-link/category/@code <iati-organisations/iati-organisation/document-link/category/.code>`
+
+
 
 Download this codelist
 ----------------------

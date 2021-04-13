@@ -10,6 +10,24 @@ This is a :ref:`Non-Core codelist <non_core_codelist>`.
 
 
 
+Use this codelist for
+---------------------
+
+* :ref:`iati-activities/iati-activity/reporting-org/@type <iati-activities/iati-activity/reporting-org/.type>`
+
+* :ref:`iati-activities/iati-activity/participating-org/@type <iati-activities/iati-activity/participating-org/.type>`
+
+* :ref:`iati-activities/iati-activity/planned-disbursement/provider-org/@type <iati-activities/iati-activity/planned-disbursement/provider-org/.type>`
+
+* :ref:`iati-activities/iati-activity/planned-disbursement/receiver-org/@type <iati-activities/iati-activity/planned-disbursement/receiver-org/.type>`
+
+* :ref:`iati-activities/iati-activity/transaction/provider-org/@type <iati-activities/iati-activity/transaction/provider-org/.type>`
+
+* :ref:`iati-activities/iati-activity/transaction/receiver-org/@type <iati-activities/iati-activity/transaction/receiver-org/.type>`
+
+* :ref:`iati-organisations/iati-organisation/reporting-org/@type <iati-organisations/iati-organisation/reporting-org/.type>`
+
+
 
 Download this codelist
 ----------------------

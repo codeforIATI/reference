@@ -12,6 +12,20 @@ This is a :ref:`Core codelist <core_codelist>`.
 
 
 
+Use this codelist for
+---------------------
+
+* :ref:`iati-activities/iati-activity/budget/@status <iati-activities/iati-activity/budget/.status>`
+
+* :ref:`iati-organisations/iati-organisation/total-budget/@status <iati-organisations/iati-organisation/total-budget/.status>`
+
+* :ref:`iati-organisations/iati-organisation/recipient-org-budget/@status <iati-organisations/iati-organisation/recipient-org-budget/.status>`
+
+* :ref:`iati-organisations/iati-organisation/recipient-region-budget/@status <iati-organisations/iati-organisation/recipient-region-budget/.status>`
+
+* :ref:`iati-organisations/iati-organisation/recipient-country-budget/@status <iati-organisations/iati-organisation/recipient-country-budget/.status>`
+
+
 
 Download this codelist
 ----------------------

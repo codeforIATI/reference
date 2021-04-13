@@ -14,6 +14,14 @@ This is a :ref:`Replicated codelist <non_core_codelist>`.
 
 
 
+Use this codelist for
+---------------------
+
+* :ref:`iati-activities/iati-activity/default-finance-type/@code <iati-activities/iati-activity/default-finance-type/.code>`
+
+* :ref:`iati-activities/iati-activity/transaction/finance-type/@code <iati-activities/iati-activity/transaction/finance-type/.code>`
+
+
 
 Download this codelist
 ----------------------

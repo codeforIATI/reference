@@ -10,6 +10,14 @@ This is a :ref:`Non-Core codelist <non_core_codelist>`.
 
 
 
+Use this codelist for
+---------------------
+
+* :ref:`iati-activities/iati-activity/location/location-id/@vocabulary <iati-activities/iati-activity/location/location-id/.vocabulary>`
+
+* :ref:`iati-activities/iati-activity/location/administrative/@vocabulary <iati-activities/iati-activity/location/administrative/.vocabulary>`
+
+
 
 Download this codelist
 ----------------------

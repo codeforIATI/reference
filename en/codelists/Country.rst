@@ -20,6 +20,20 @@ This is a :ref:`Replicated codelist <non_core_codelist>`.
 
 
 
+Use this codelist for
+---------------------
+
+* :ref:`iati-activities/iati-activity/recipient-country/@code <iati-activities/iati-activity/recipient-country/.code>`
+
+* :ref:`iati-activities/iati-activity/location/administrative/@code <iati-activities/iati-activity/location/administrative/.code>`
+
+* :ref:`iati-activities/iati-activity/transaction/recipient-country/@code <iati-activities/iati-activity/transaction/recipient-country/.code>`
+
+* :ref:`iati-organisations/iati-organisation/recipient-country-budget/recipient-country/@code <iati-organisations/iati-organisation/recipient-country-budget/recipient-country/.code>`
+
+* :ref:`iati-organisations/iati-organisation/document-link/recipient-country/@code <iati-organisations/iati-organisation/document-link/recipient-country/.code>`
+
+
 
 Download this codelist
 ----------------------

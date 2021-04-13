@@ -14,6 +14,12 @@ This is a :ref:`Replicated codelist <non_core_codelist>`.
 
 
 
+Use this codelist for
+---------------------
+
+* :ref:`iati-activities/iati-activity/collaboration-type/@code <iati-activities/iati-activity/collaboration-type/.code>`
+
+
 
 Download this codelist
 ----------------------

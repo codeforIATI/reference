@@ -14,6 +14,24 @@ This is a :ref:`Replicated codelist <non_core_codelist>`.
 
 
 
+Use this codelist for
+---------------------
+
+* :ref:`iati-activities/iati-activity/document-link/@format <iati-activities/iati-activity/document-link/.format>`
+
+* :ref:`iati-activities/iati-activity/result/document-link/@format <iati-activities/iati-activity/result/document-link/.format>`
+
+* :ref:`iati-activities/iati-activity/result/indicator/document-link/@format <iati-activities/iati-activity/result/indicator/document-link/.format>`
+
+* :ref:`iati-activities/iati-activity/result/indicator/baseline/document-link/@format <iati-activities/iati-activity/result/indicator/baseline/document-link/.format>`
+
+* :ref:`iati-activities/iati-activity/result/indicator/period/target/document-link/@format <iati-activities/iati-activity/result/indicator/period/target/document-link/.format>`
+
+* :ref:`iati-activities/iati-activity/result/indicator/period/actual/document-link/@format <iati-activities/iati-activity/result/indicator/period/actual/document-link/.format>`
+
+* :ref:`iati-organisations/iati-organisation/document-link/@format <iati-organisations/iati-organisation/document-link/.format>`
+
+
 
 Download this codelist
 ----------------------

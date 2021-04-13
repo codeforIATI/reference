@@ -14,6 +14,14 @@ This is a :ref:`Non-Core codelist <non_core_codelist>`.
 
 
 
+Use this codelist for
+---------------------
+
+* :ref:`iati-activities/@version <iati-activities/.version>`
+
+* :ref:`iati-organisations/@version <iati-organisations/.version>`
+
+
 
 Download this codelist
 ----------------------

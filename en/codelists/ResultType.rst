@@ -10,6 +10,12 @@ This is a :ref:`Non-Core codelist <non_core_codelist>`.
 
 
 
+Use this codelist for
+---------------------
+
+* :ref:`iati-activities/iati-activity/result/@type <iati-activities/iati-activity/result/.type>`
+
+
 
 Download this codelist
 ----------------------

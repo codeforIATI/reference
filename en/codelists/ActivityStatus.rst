@@ -12,6 +12,12 @@ This is a :ref:`Core codelist <core_codelist>`.
 
 
 
+Use this codelist for
+---------------------
+
+* :ref:`iati-activities/iati-activity/activity-status/@code <iati-activities/iati-activity/activity-status/.code>`
+
+
 
 Download this codelist
 ----------------------

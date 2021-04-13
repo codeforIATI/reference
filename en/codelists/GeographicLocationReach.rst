@@ -10,6 +10,12 @@ This is a :ref:`Non-Core codelist <non_core_codelist>`.
 
 
 
+Use this codelist for
+---------------------
+
+* :ref:`iati-activities/iati-activity/location/location-reach/@code <iati-activities/iati-activity/location/location-reach/.code>`
+
+
 
 Download this codelist
 ----------------------

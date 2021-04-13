@@ -12,6 +12,12 @@ This is a :ref:`Non-Core codelist <non_core_codelist>`.
 
 
 
+Use this codelist for
+---------------------
+
+* :ref:`iati-activities/iati-activity/tag/@vocabulary <iati-activities/iati-activity/tag/.vocabulary>`
+
+
 
 Download this codelist
 ----------------------

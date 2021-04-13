@@ -14,6 +14,38 @@ This is a :ref:`Replicated codelist <non_core_codelist>`.
 
 
 
+Use this codelist for
+---------------------
+
+* :ref:`iati-activities/iati-activity/budget/value/@currency <iati-activities/iati-activity/budget/value/.currency>`
+
+* :ref:`iati-activities/iati-activity/planned-disbursement/value/@currency <iati-activities/iati-activity/planned-disbursement/value/.currency>`
+
+* :ref:`iati-activities/iati-activity/transaction/value/@currency <iati-activities/iati-activity/transaction/value/.currency>`
+
+* :ref:`iati-activities/iati-activity/crs-add/loan-status/@currency <iati-activities/iati-activity/crs-add/loan-status/.currency>`
+
+* :ref:`iati-activities/iati-activity/fss/forecast/@currency <iati-activities/iati-activity/fss/forecast/.currency>`
+
+* :ref:`iati-activities/iati-activity/@default-currency <iati-activities/iati-activity/.default-currency>`
+
+* :ref:`iati-organisations/iati-organisation/total-budget/value/@currency <iati-organisations/iati-organisation/total-budget/value/.currency>`
+
+* :ref:`iati-organisations/iati-organisation/recipient-org-budget/value/@currency <iati-organisations/iati-organisation/recipient-org-budget/value/.currency>`
+
+* :ref:`iati-organisations/iati-organisation/recipient-org-budget/budget-line/value/@currency <iati-organisations/iati-organisation/recipient-org-budget/budget-line/value/.currency>`
+
+* :ref:`iati-organisations/iati-organisation/recipient-region-budget/value/@currency <iati-organisations/iati-organisation/recipient-region-budget/value/.currency>`
+
+* :ref:`iati-organisations/iati-organisation/recipient-region-budget/budget-line/value/@currency <iati-organisations/iati-organisation/recipient-region-budget/budget-line/value/.currency>`
+
+* :ref:`iati-organisations/iati-organisation/recipient-country-budget/value/@currency <iati-organisations/iati-organisation/recipient-country-budget/value/.currency>`
+
+* :ref:`iati-organisations/iati-organisation/recipient-country-budget/budget-line/value/@currency <iati-organisations/iati-organisation/recipient-country-budget/budget-line/value/.currency>`
+
+* :ref:`iati-organisations/iati-organisation/@default-currency <iati-organisations/iati-organisation/.default-currency>`
+
+
 
 Download this codelist
 ----------------------

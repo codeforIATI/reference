@@ -18,6 +18,12 @@ This is a :ref:`Replicated codelist <non_core_codelist>`.
 
 
 
+Use this codelist for
+---------------------
+
+* :ref:`iati-activities/iati-activity/location/feature-designation/@code <iati-activities/iati-activity/location/feature-designation/.code>`
+
+
 
 Download this codelist
 ----------------------

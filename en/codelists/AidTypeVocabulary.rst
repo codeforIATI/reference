@@ -12,6 +12,14 @@ This is a :ref:`Non-Core codelist <non_core_codelist>`.
 
 
 
+Use this codelist for
+---------------------
+
+* :ref:`iati-activities/iati-activity/default-aid-type/@vocabulary <iati-activities/iati-activity/default-aid-type/.vocabulary>`
+
+* :ref:`iati-activities/iati-activity/transaction/aid-type/@vocabulary <iati-activities/iati-activity/transaction/aid-type/.vocabulary>`
+
+
 
 Download this codelist
 ----------------------

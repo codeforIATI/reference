@@ -14,6 +14,12 @@ This is a :ref:`Non-Core codelist <non_core_codelist>`.
 
 
 
+Use this codelist for
+---------------------
+
+* :ref:`iati-activities/iati-activity/humanitarian-scope/@type <iati-activities/iati-activity/humanitarian-scope/.type>`
+
+
 
 Download this codelist
 ----------------------

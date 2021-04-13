@@ -12,6 +12,16 @@ This is a :ref:`Replicated codelist <non_core_codelist>`.
 
 
 
+Use this codelist for
+---------------------
+
+* :ref:`iati-activities/iati-activity/recipient-region/@code <iati-activities/iati-activity/recipient-region/.code>`
+
+* :ref:`iati-activities/iati-activity/transaction/recipient-region/@code <iati-activities/iati-activity/transaction/recipient-region/.code>`
+
+* :ref:`iati-organisations/iati-organisation/recipient-region-budget/recipient-region/@code <iati-organisations/iati-organisation/recipient-region-budget/recipient-region/.code>`
+
+
 
 Download this codelist
 ----------------------

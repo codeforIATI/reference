@@ -10,6 +10,16 @@ This is a :ref:`Non-Core codelist <non_core_codelist>`.
 
 
 
+Use this codelist for
+---------------------
+
+* :ref:`iati-activities/iati-activity/recipient-region/@vocabulary <iati-activities/iati-activity/recipient-region/.vocabulary>`
+
+* :ref:`iati-activities/iati-activity/transaction/recipient-region/@vocabulary <iati-activities/iati-activity/transaction/recipient-region/.vocabulary>`
+
+* :ref:`iati-organisations/iati-organisation/recipient-region-budget/recipient-region/@vocabulary <iati-organisations/iati-organisation/recipient-region-budget/recipient-region/.vocabulary>`
+
+
 
 Download this codelist
 ----------------------
