@@ -53,8 +53,6 @@ Download this codelist
 
 
 
-The codelists were translated in French in April 2018 with the support of the Government of Canada. Please note that if any codelists have been added since then, they may not be available in French.
-
 Codes
 -----
 
