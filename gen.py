@@ -4,15 +4,13 @@ import json
 import shutil
 import textwrap
 import jinja2
-from collections import defaultdict
 from iatirulesets.text import rules_text
 
-from schema_to_doc import Schema2Doc
+from schema_to_doc import Schema2Doc, codelists_paths
 from helpers import get_extra_docs, get_github_url, path_to_ref
 
 
 standard_ruleset = json.load(open('./IATI-Rulesets/rulesets/standard.json'))
-codelists_paths = defaultdict(list)
 
 
 def ruleset_page(lang):
