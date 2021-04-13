@@ -56,8 +56,6 @@ Download this codelist
 This codelist has some withdrawn elements, for details on these check the `Non-Core Codelist changelog record <http://iatistandard.org/upgrades/noncore-codelist-changelog>`__
 {% endif %}
 
-The codelists were translated in French in April 2018 with the support of the Government of Canada. Please note that if any codelists have been added since then, they may not be available in French.
-
 Codes
 -----
 
