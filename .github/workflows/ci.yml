@@ -51,3 +51,5 @@ jobs:
         BRANCH: gh-pages
         FOLDER: docs/en/_build/dirhtml
         CLEAN: true
+        SILENT: true
+        SINGLE_COMMIT: true
