@@ -1383,7 +1383,7 @@ Activity Standard Summary Table
       - code
       - The code for the sector.
       - xsd:string
-      - (:doc:`/codelists/Sector`)(:doc:`/codelists/SectorCategory`)
+      - (:doc:`/codelists/Sector`)(:doc:`/codelists/SectorCategory`)(:doc:`/codelists/UNSDG-Goals`)(:doc:`/codelists/UNSDG-Targets`)
       - iati-activities/iati-activity/sector/\@code
       - 1..1
       - 
@@ -2506,7 +2506,7 @@ Activity Standard Summary Table
       - code
       - The code for the sector.
       - xsd:string
-      - (:doc:`/codelists/Sector`)(:doc:`/codelists/SectorCategory`)
+      - (:doc:`/codelists/Sector`)(:doc:`/codelists/SectorCategory`)(:doc:`/codelists/UNSDG-Goals`)(:doc:`/codelists/UNSDG-Targets`)
       - iati-activities/iati-activity/transaction/sector/\@code
       - 1..1
       - 

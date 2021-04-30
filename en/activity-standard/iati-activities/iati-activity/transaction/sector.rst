@@ -99,6 +99,12 @@ Attributes
   This value must be on the :doc:`SectorCategory codelist </codelists/SectorCategory>`, if the relevant vocabulary is used.
 
 
+  This value must be on the :doc:`UNSDG-Goals codelist </codelists/UNSDG-Goals>`, if the relevant vocabulary is used.
+
+
+  This value must be on the :doc:`UNSDG-Targets codelist </codelists/UNSDG-Targets>`, if the relevant vocabulary is used.
+
+
 
   
 

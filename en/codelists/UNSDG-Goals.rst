@@ -17,7 +17,11 @@ This is a :ref:`Replicated codelist <non_core_codelist>`.
 Use this codelist for
 ---------------------
 
+* :ref:`iati-activities/iati-activity/sector/@code <iati-activities/iati-activity/sector/.code>`
+
 * :ref:`iati-activities/iati-activity/tag/@code <iati-activities/iati-activity/tag/.code>`
+
+* :ref:`iati-activities/iati-activity/transaction/sector/@code <iati-activities/iati-activity/transaction/sector/.code>`
 
 
 
