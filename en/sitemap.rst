@@ -2,13 +2,12 @@ Sitemap
 =======
 
 .. toctree::
-   :includehidden:
    :titlesonly:
 
-   introduction
-   key-considerations
-   guidance/index
-   reference
-   upgrades
-   developer/index
-
+   activity-standard
+   organisation-standard
+   namespaces-extensions
+   codelists
+   schema
+   rulesets
+   organisation-identifiers

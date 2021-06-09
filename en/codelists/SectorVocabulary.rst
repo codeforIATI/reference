@@ -141,6 +141,13 @@ Codes
      - https://www.census.gov/cgi-bin/sssd/naics/naicsrch?chart=2017
    
        
+   * - 12   
+       
+     - UN System Function
+     - The sector reported corresponds to the UN System Function codelist
+     - https://unsceb.org/sites/default/files/2021-04/UN_DataStandards_Digital_20210420.pdf
+   
+       
    * - 99   
        
      - Reporting Organisation
