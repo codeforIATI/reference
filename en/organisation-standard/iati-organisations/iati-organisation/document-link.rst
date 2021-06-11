@@ -111,6 +111,9 @@ The ``description`` element was `added <https://discuss.iatistandard.org/t/docum
 ^^^^
 Removed ``@language`` attribute from, and introduced an new ``language`` child element to, the ``document-link`` element.
 
+.. meta::
+  :order: 8
+
 
 Developer tools
 ~~~~~~~~~~~~~~~

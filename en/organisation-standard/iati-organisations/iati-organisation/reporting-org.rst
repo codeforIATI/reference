@@ -131,6 +131,9 @@ Changelog
 ^^^^
 | The ``@secondary-reporter`` attribute was introduced in 1.04.
 
+.. meta::
+  :order: 2
+
 
 Developer tools
 ~~~~~~~~~~~~~~~

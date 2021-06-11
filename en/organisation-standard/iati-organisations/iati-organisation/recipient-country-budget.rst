@@ -101,6 +101,9 @@ Changelog
 ^^^^
 The ``status`` attribute was `added <http://support.iatistandard.org/entries/21150501-Budgets-and-tentativeness>`__.
 
+.. meta::
+  :order: 6
+
 
 Developer tools
 ~~~~~~~~~~~~~~~
