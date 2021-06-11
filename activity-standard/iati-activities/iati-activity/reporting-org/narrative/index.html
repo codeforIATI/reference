@@ -1,0 +1,853 @@
+<!doctype html>
+<html class="no-js">
+  <head><meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <meta name="color-scheme" content="light dark"><link rel="index" title="Index" href="../../../../../genindex/" /><link rel="search" title="Search" href="../../../../../search/" /><link rel="next" title="title" href="../../title/" /><link rel="prev" title="reporting-org" href="../" />
+
+    <meta name="generator" content="sphinx-3.5.4, furo 2021.04.11.beta34"/>
+        <title>narrative - IATI Standard 2.03 documentation</title>
+      <link rel="stylesheet" href="../../../../../_static/styles/furo.css?digest=59ab60ac09ea94ccfe6deddff6d715cce948a6fc">
+    <link rel="stylesheet" href="../../../../../_static/pygments.css">
+    <link media="(prefers-color-scheme: dark)" rel="stylesheet" href="../../../../../_static/pygments_dark.css">
+    
+
+
+<style>
+  :root {
+    --color-code-background: #eeffcc;
+  --color-code-foreground: black;
+  
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --color-code-background: #202020;
+  --color-code-foreground: #d0d0d0;
+  
+    }
+  }
+
+  /* For allowing end-user-specific overrides */
+  .override-light {
+    --color-code-background: #eeffcc;
+  --color-code-foreground: black;
+  
+  }
+  .override-dark {
+    --color-code-background: #202020;
+  --color-code-foreground: #d0d0d0;
+  
+  }
+</style><link rel="stylesheet" href="../../../../../_static/styles/furo-extensions.css?digest=d391b54134226e4196576da3bdb6dddb7e05ba2b"></head>
+  <body dir="">
+    
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+  <symbol id="svg-toc" viewBox="0 0 24 24">
+    <title>Contents</title>
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+      stroke-width="1.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+      <path stroke="none" d="M0 0h24v24H0z"/>
+      <line x1="4" y1="6" x2="20" y2="6" />
+      <line x1="10" y1="12" x2="20" y2="12" />
+      <line x1="6" y1="18" x2="20" y2="18" />
+    </svg>
+  </symbol>
+  <symbol id="svg-menu" viewBox="0 0 24 24">
+    <title>Menu</title>
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+      stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+      class="feather feather-menu">
+      <line x1="3" y1="12" x2="21" y2="12"></line>
+      <line x1="3" y1="6" x2="21" y2="6"></line>
+      <line x1="3" y1="18" x2="21" y2="18"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-arrow-right" viewBox="0 0 24 24">
+    <title>Expand</title>
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+      stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+      class="feather feather-chevron-right">
+      <polyline points="9 18 15 12 9 6"></polyline>
+    </svg>
+  </symbol>
+</svg>
+
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation">
+<input type="checkbox" class="sidebar-toggle" name="__toc" id="__toc">
+<label class="overlay sidebar-overlay" for="__navigation"></label>
+<label class="overlay toc-overlay" for="__toc"></label>
+
+
+
+<div class="page">
+  <header class="mobile-header">
+    <div class="header-left">
+      <label class="nav-overlay-icon" for="__navigation">
+        <i class="icon"><svg><use href="#svg-menu"></use></svg></i>
+      </label>
+    </div>
+    <div class="header-center">
+      <a href="../../../../../sitemap/"><div class="brand">IATI Standard 2.03 documentation</div></a>
+    </div>
+    <div class="header-right">
+      <label class="toc-overlay-icon toc-header-icon" for="__toc">
+        <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
+      </label>
+    </div>
+  </header>
+  <aside class="sidebar-drawer">
+    <div class="sidebar-container">
+      
+      <div class="sidebar-sticky"><a class="sidebar-brand" href="../../../../../sitemap/">
+  
+  
+  <span class="sidebar-brand-text">IATI Standard 2.03 documentation</span>
+  
+</a><form class="sidebar-search-container" method="get" action="../../../../../search/">
+  <input class="sidebar-search" placeholder=Search name="q">
+  <input type="hidden" name="check_keywords" value="yes">
+  <input type="hidden" name="area" value="default">
+</form><div class="sidebar-scroll"><div class="sidebar-tree">
+  <ul class="current">
+<li class="toctree-l1 current has-children"><a class="reference internal" href="../../../../">Activity Standard</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label for="toctree-checkbox-1"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="current">
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../../../overview/">Overview</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label for="toctree-checkbox-2"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../../overview/what-to-publish/">What do I need to publish?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../overview/all-elements-in-IATI/">Full list of top-level elements in IATI</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../summary-table/">Activity Standard Summary Table</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../overview/activity-file/">Activity file</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../overview/iati-activity/">IATI Activity</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../overview/iati-identifier/">IATI Identifier</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../overview/dates/">Activity Dates</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../overview/organisations/">Organisations</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../overview/geography/">Geography</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../overview/country-budget-alignment/">Country Budget Alignment</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../overview/classifications/">Classifications</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../overview/budgets/">Budgets</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../overview/transactions/">Transaction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../overview/result/">Result</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../overview/related-data/">Related Data</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../overview/linked-documents/">Related Documents</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../overview/crs-fss/">CRS &amp; FSS</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../overview/conditions/">Conditions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../overview/contact-info/">Contact Info</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../overview/humanitarian-reporting/">Humanitarian Reporting</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../overview/self-defined-vocabularies/">Self-defined Vocabularies</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../example-xml/">Example Usage XML</a></li>
+</ul>
+</li>
+<li class="toctree-l2 current has-children"><a class="reference internal" href="../../../../elements/">Elements</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label for="toctree-checkbox-3"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="current">
+<li class="toctree-l3 current has-children"><a class="reference internal" href="../../../">iati-activities</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label for="toctree-checkbox-4"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="current">
+<li class="toctree-l4 current has-children"><a class="reference internal" href="../../">iati-activity</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label for="toctree-checkbox-5"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="current">
+<li class="toctree-l5"><a class="reference internal" href="../../iati-identifier/">iati-identifier</a></li>
+<li class="toctree-l5 current has-children"><a class="reference internal" href="../">reporting-org</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/><label for="toctree-checkbox-6"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="current">
+<li class="toctree-l6 current current-page"><a class="current reference internal" href="#">narrative</a></li>
+</ul>
+</li>
+<li class="toctree-l5 has-children"><a class="reference internal" href="../../title/">title</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/><label for="toctree-checkbox-7"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l6"><a class="reference internal" href="../../title/narrative/">narrative</a></li>
+</ul>
+</li>
+<li class="toctree-l5 has-children"><a class="reference internal" href="../../description/">description</a><input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/><label for="toctree-checkbox-8"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l6"><a class="reference internal" href="../../description/narrative/">narrative</a></li>
+</ul>
+</li>
+<li class="toctree-l5 has-children"><a class="reference internal" href="../../participating-org/">participating-org</a><input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/><label for="toctree-checkbox-9"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l6"><a class="reference internal" href="../../participating-org/narrative/">narrative</a></li>
+</ul>
+</li>
+<li class="toctree-l5 has-children"><a class="reference internal" href="../../other-identifier/">other-identifier</a><input class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" type="checkbox"/><label for="toctree-checkbox-10"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l6 has-children"><a class="reference internal" href="../../other-identifier/owner-org/">owner-org</a><input class="toctree-checkbox" id="toctree-checkbox-11" name="toctree-checkbox-11" type="checkbox"/><label for="toctree-checkbox-11"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l7"><a class="reference internal" href="../../other-identifier/owner-org/narrative/">narrative</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l5"><a class="reference internal" href="../../activity-status/">activity-status</a></li>
+<li class="toctree-l5 has-children"><a class="reference internal" href="../../activity-date/">activity-date</a><input class="toctree-checkbox" id="toctree-checkbox-12" name="toctree-checkbox-12" type="checkbox"/><label for="toctree-checkbox-12"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l6"><a class="reference internal" href="../../activity-date/narrative/">narrative</a></li>
+</ul>
+</li>
+<li class="toctree-l5 has-children"><a class="reference internal" href="../../contact-info/">contact-info</a><input class="toctree-checkbox" id="toctree-checkbox-13" name="toctree-checkbox-13" type="checkbox"/><label for="toctree-checkbox-13"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l6 has-children"><a class="reference internal" href="../../contact-info/organisation/">organisation</a><input class="toctree-checkbox" id="toctree-checkbox-14" name="toctree-checkbox-14" type="checkbox"/><label for="toctree-checkbox-14"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l7"><a class="reference internal" href="../../contact-info/organisation/narrative/">narrative</a></li>
+</ul>
+</li>
+<li class="toctree-l6 has-children"><a class="reference internal" href="../../contact-info/department/">department</a><input class="toctree-checkbox" id="toctree-checkbox-15" name="toctree-checkbox-15" type="checkbox"/><label for="toctree-checkbox-15"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l7"><a class="reference internal" href="../../contact-info/department/narrative/">narrative</a></li>
+</ul>
+</li>
+<li class="toctree-l6 has-children"><a class="reference internal" href="../../contact-info/person-name/">person-name</a><input class="toctree-checkbox" id="toctree-checkbox-16" name="toctree-checkbox-16" type="checkbox"/><label for="toctree-checkbox-16"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l7"><a class="reference internal" href="../../contact-info/person-name/narrative/">narrative</a></li>
+</ul>
+</li>
+<li class="toctree-l6 has-children"><a class="reference internal" href="../../contact-info/job-title/">job-title</a><input class="toctree-checkbox" id="toctree-checkbox-17" name="toctree-checkbox-17" type="checkbox"/><label for="toctree-checkbox-17"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l7"><a class="reference internal" href="../../contact-info/job-title/narrative/">narrative</a></li>
+</ul>
+</li>
+<li class="toctree-l6"><a class="reference internal" href="../../contact-info/telephone/">telephone</a></li>
+<li class="toctree-l6"><a class="reference internal" href="../../contact-info/email/">email</a></li>
+<li class="toctree-l6"><a class="reference internal" href="../../contact-info/website/">website</a></li>
+<li class="toctree-l6 has-children"><a class="reference internal" href="../../contact-info/mailing-address/">mailing-address</a><input class="toctree-checkbox" id="toctree-checkbox-18" name="toctree-checkbox-18" type="checkbox"/><label for="toctree-checkbox-18"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l7"><a class="reference internal" href="../../contact-info/mailing-address/narrative/">narrative</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l5"><a class="reference internal" href="../../activity-scope/">activity-scope</a></li>
+<li class="toctree-l5 has-children"><a class="reference internal" href="../../recipient-country/">recipient-country</a><input class="toctree-checkbox" id="toctree-checkbox-19" name="toctree-checkbox-19" type="checkbox"/><label for="toctree-checkbox-19"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l6"><a class="reference internal" href="../../recipient-country/narrative/">narrative</a></li>
+</ul>
+</li>
+<li class="toctree-l5 has-children"><a class="reference internal" href="../../recipient-region/">recipient-region</a><input class="toctree-checkbox" id="toctree-checkbox-20" name="toctree-checkbox-20" type="checkbox"/><label for="toctree-checkbox-20"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l6"><a class="reference internal" href="../../recipient-region/narrative/">narrative</a></li>
+</ul>
+</li>
+<li class="toctree-l5 has-children"><a class="reference internal" href="../../location/">location</a><input class="toctree-checkbox" id="toctree-checkbox-21" name="toctree-checkbox-21" type="checkbox"/><label for="toctree-checkbox-21"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l6"><a class="reference internal" href="../../location/location-reach/">location-reach</a></li>
+<li class="toctree-l6"><a class="reference internal" href="../../location/location-id/">location-id</a></li>
+<li class="toctree-l6 has-children"><a class="reference internal" href="../../location/name/">name</a><input class="toctree-checkbox" id="toctree-checkbox-22" name="toctree-checkbox-22" type="checkbox"/><label for="toctree-checkbox-22"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l7"><a class="reference internal" href="../../location/name/narrative/">narrative</a></li>
+</ul>
+</li>
+<li class="toctree-l6 has-children"><a class="reference internal" href="../../location/description/">description</a><input class="toctree-checkbox" id="toctree-checkbox-23" name="toctree-checkbox-23" type="checkbox"/><label for="toctree-checkbox-23"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l7"><a class="reference internal" href="../../location/description/narrative/">narrative</a></li>
+</ul>
+</li>
+<li class="toctree-l6 has-children"><a class="reference internal" href="../../location/activity-description/">activity-description</a><input class="toctree-checkbox" id="toctree-checkbox-24" name="toctree-checkbox-24" type="checkbox"/><label for="toctree-checkbox-24"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l7"><a class="reference internal" href="../../location/activity-description/narrative/">narrative</a></li>
+</ul>
+</li>
+<li class="toctree-l6"><a class="reference internal" href="../../location/administrative/">administrative</a></li>
+<li class="toctree-l6 has-children"><a class="reference internal" href="../../location/point/">point</a><input class="toctree-checkbox" id="toctree-checkbox-25" name="toctree-checkbox-25" type="checkbox"/><label for="toctree-checkbox-25"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l7"><a class="reference internal" href="../../location/point/pos/">pos</a></li>
+</ul>
+</li>
+<li class="toctree-l6"><a class="reference internal" href="../../location/exactness/">exactness</a></li>
+<li class="toctree-l6"><a class="reference internal" href="../../location/location-class/">location-class</a></li>
+<li class="toctree-l6"><a class="reference internal" href="../../location/feature-designation/">feature-designation</a></li>
+</ul>
+</li>
+<li class="toctree-l5 has-children"><a class="reference internal" href="../../sector/">sector</a><input class="toctree-checkbox" id="toctree-checkbox-26" name="toctree-checkbox-26" type="checkbox"/><label for="toctree-checkbox-26"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l6"><a class="reference internal" href="../../sector/narrative/">narrative</a></li>
+</ul>
+</li>
+<li class="toctree-l5 has-children"><a class="reference internal" href="../../tag/">tag</a><input class="toctree-checkbox" id="toctree-checkbox-27" name="toctree-checkbox-27" type="checkbox"/><label for="toctree-checkbox-27"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l6"><a class="reference internal" href="../../tag/narrative/">narrative</a></li>
+</ul>
+</li>
+<li class="toctree-l5 has-children"><a class="reference internal" href="../../country-budget-items/">country-budget-items</a><input class="toctree-checkbox" id="toctree-checkbox-28" name="toctree-checkbox-28" type="checkbox"/><label for="toctree-checkbox-28"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l6 has-children"><a class="reference internal" href="../../country-budget-items/budget-item/">budget-item</a><input class="toctree-checkbox" id="toctree-checkbox-29" name="toctree-checkbox-29" type="checkbox"/><label for="toctree-checkbox-29"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l7 has-children"><a class="reference internal" href="../../country-budget-items/budget-item/description/">description</a><input class="toctree-checkbox" id="toctree-checkbox-30" name="toctree-checkbox-30" type="checkbox"/><label for="toctree-checkbox-30"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l8"><a class="reference internal" href="../../country-budget-items/budget-item/description/narrative/">narrative</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l5 has-children"><a class="reference internal" href="../../humanitarian-scope/">humanitarian-scope</a><input class="toctree-checkbox" id="toctree-checkbox-31" name="toctree-checkbox-31" type="checkbox"/><label for="toctree-checkbox-31"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l6"><a class="reference internal" href="../../humanitarian-scope/narrative/">narrative</a></li>
+</ul>
+</li>
+<li class="toctree-l5 has-children"><a class="reference internal" href="../../policy-marker/">policy-marker</a><input class="toctree-checkbox" id="toctree-checkbox-32" name="toctree-checkbox-32" type="checkbox"/><label for="toctree-checkbox-32"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l6"><a class="reference internal" href="../../policy-marker/narrative/">narrative</a></li>
+</ul>
+</li>
+<li class="toctree-l5"><a class="reference internal" href="../../collaboration-type/">collaboration-type</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../default-flow-type/">default-flow-type</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../default-finance-type/">default-finance-type</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../default-aid-type/">default-aid-type</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../default-tied-status/">default-tied-status</a></li>
+<li class="toctree-l5 has-children"><a class="reference internal" href="../../budget/">budget</a><input class="toctree-checkbox" id="toctree-checkbox-33" name="toctree-checkbox-33" type="checkbox"/><label for="toctree-checkbox-33"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l6"><a class="reference internal" href="../../budget/period-start/">period-start</a></li>
+<li class="toctree-l6"><a class="reference internal" href="../../budget/period-end/">period-end</a></li>
+<li class="toctree-l6"><a class="reference internal" href="../../budget/value/">value</a></li>
+</ul>
+</li>
+<li class="toctree-l5 has-children"><a class="reference internal" href="../../planned-disbursement/">planned-disbursement</a><input class="toctree-checkbox" id="toctree-checkbox-34" name="toctree-checkbox-34" type="checkbox"/><label for="toctree-checkbox-34"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l6"><a class="reference internal" href="../../planned-disbursement/period-start/">period-start</a></li>
+<li class="toctree-l6"><a class="reference internal" href="../../planned-disbursement/period-end/">period-end</a></li>
+<li class="toctree-l6"><a class="reference internal" href="../../planned-disbursement/value/">value</a></li>
+<li class="toctree-l6 has-children"><a class="reference internal" href="../../planned-disbursement/provider-org/">provider-org</a><input class="toctree-checkbox" id="toctree-checkbox-35" name="toctree-checkbox-35" type="checkbox"/><label for="toctree-checkbox-35"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l7"><a class="reference internal" href="../../planned-disbursement/provider-org/narrative/">narrative</a></li>
+</ul>
+</li>
+<li class="toctree-l6 has-children"><a class="reference internal" href="../../planned-disbursement/receiver-org/">receiver-org</a><input class="toctree-checkbox" id="toctree-checkbox-36" name="toctree-checkbox-36" type="checkbox"/><label for="toctree-checkbox-36"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l7"><a class="reference internal" href="../../planned-disbursement/receiver-org/narrative/">narrative</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l5"><a class="reference internal" href="../../capital-spend/">capital-spend</a></li>
+<li class="toctree-l5 has-children"><a class="reference internal" href="../../transaction/">transaction</a><input class="toctree-checkbox" id="toctree-checkbox-37" name="toctree-checkbox-37" type="checkbox"/><label for="toctree-checkbox-37"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l6"><a class="reference internal" href="../../transaction/transaction-type/">transaction-type</a></li>
+<li class="toctree-l6"><a class="reference internal" href="../../transaction/transaction-date/">transaction-date</a></li>
+<li class="toctree-l6"><a class="reference internal" href="../../transaction/value/">value</a></li>
+<li class="toctree-l6 has-children"><a class="reference internal" href="../../transaction/description/">description</a><input class="toctree-checkbox" id="toctree-checkbox-38" name="toctree-checkbox-38" type="checkbox"/><label for="toctree-checkbox-38"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l7"><a class="reference internal" href="../../transaction/description/narrative/">narrative</a></li>
+</ul>
+</li>
+<li class="toctree-l6 has-children"><a class="reference internal" href="../../transaction/provider-org/">provider-org</a><input class="toctree-checkbox" id="toctree-checkbox-39" name="toctree-checkbox-39" type="checkbox"/><label for="toctree-checkbox-39"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l7"><a class="reference internal" href="../../transaction/provider-org/narrative/">narrative</a></li>
+</ul>
+</li>
+<li class="toctree-l6 has-children"><a class="reference internal" href="../../transaction/receiver-org/">receiver-org</a><input class="toctree-checkbox" id="toctree-checkbox-40" name="toctree-checkbox-40" type="checkbox"/><label for="toctree-checkbox-40"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l7"><a class="reference internal" href="../../transaction/receiver-org/narrative/">narrative</a></li>
+</ul>
+</li>
+<li class="toctree-l6"><a class="reference internal" href="../../transaction/disbursement-channel/">disbursement-channel</a></li>
+<li class="toctree-l6 has-children"><a class="reference internal" href="../../transaction/sector/">sector</a><input class="toctree-checkbox" id="toctree-checkbox-41" name="toctree-checkbox-41" type="checkbox"/><label for="toctree-checkbox-41"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l7"><a class="reference internal" href="../../transaction/sector/narrative/">narrative</a></li>
+</ul>
+</li>
+<li class="toctree-l6 has-children"><a class="reference internal" href="../../transaction/recipient-country/">recipient-country</a><input class="toctree-checkbox" id="toctree-checkbox-42" name="toctree-checkbox-42" type="checkbox"/><label for="toctree-checkbox-42"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l7"><a class="reference internal" href="../../transaction/recipient-country/narrative/">narrative</a></li>
+</ul>
+</li>
+<li class="toctree-l6 has-children"><a class="reference internal" href="../../transaction/recipient-region/">recipient-region</a><input class="toctree-checkbox" id="toctree-checkbox-43" name="toctree-checkbox-43" type="checkbox"/><label for="toctree-checkbox-43"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l7"><a class="reference internal" href="../../transaction/recipient-region/narrative/">narrative</a></li>
+</ul>
+</li>
+<li class="toctree-l6"><a class="reference internal" href="../../transaction/flow-type/">flow-type</a></li>
+<li class="toctree-l6"><a class="reference internal" href="../../transaction/finance-type/">finance-type</a></li>
+<li class="toctree-l6"><a class="reference internal" href="../../transaction/aid-type/">aid-type</a></li>
+<li class="toctree-l6"><a class="reference internal" href="../../transaction/tied-status/">tied-status</a></li>
+</ul>
+</li>
+<li class="toctree-l5 has-children"><a class="reference internal" href="../../document-link/">document-link</a><input class="toctree-checkbox" id="toctree-checkbox-44" name="toctree-checkbox-44" type="checkbox"/><label for="toctree-checkbox-44"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l6 has-children"><a class="reference internal" href="../../document-link/title/">title</a><input class="toctree-checkbox" id="toctree-checkbox-45" name="toctree-checkbox-45" type="checkbox"/><label for="toctree-checkbox-45"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l7"><a class="reference internal" href="../../document-link/title/narrative/">narrative</a></li>
+</ul>
+</li>
+<li class="toctree-l6 has-children"><a class="reference internal" href="../../document-link/description/">description</a><input class="toctree-checkbox" id="toctree-checkbox-46" name="toctree-checkbox-46" type="checkbox"/><label for="toctree-checkbox-46"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l7"><a class="reference internal" href="../../document-link/description/narrative/">narrative</a></li>
+</ul>
+</li>
+<li class="toctree-l6"><a class="reference internal" href="../../document-link/category/">category</a></li>
+<li class="toctree-l6"><a class="reference internal" href="../../document-link/language/">language</a></li>
+<li class="toctree-l6"><a class="reference internal" href="../../document-link/document-date/">document-date</a></li>
+</ul>
+</li>
+<li class="toctree-l5"><a class="reference internal" href="../../related-activity/">related-activity</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../legacy-data/">legacy-data</a></li>
+<li class="toctree-l5 has-children"><a class="reference internal" href="../../conditions/">conditions</a><input class="toctree-checkbox" id="toctree-checkbox-47" name="toctree-checkbox-47" type="checkbox"/><label for="toctree-checkbox-47"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l6 has-children"><a class="reference internal" href="../../conditions/condition/">condition</a><input class="toctree-checkbox" id="toctree-checkbox-48" name="toctree-checkbox-48" type="checkbox"/><label for="toctree-checkbox-48"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l7"><a class="reference internal" href="../../conditions/condition/narrative/">narrative</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l5 has-children"><a class="reference internal" href="../../result/">result</a><input class="toctree-checkbox" id="toctree-checkbox-49" name="toctree-checkbox-49" type="checkbox"/><label for="toctree-checkbox-49"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l6 has-children"><a class="reference internal" href="../../result/title/">title</a><input class="toctree-checkbox" id="toctree-checkbox-50" name="toctree-checkbox-50" type="checkbox"/><label for="toctree-checkbox-50"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l7"><a class="reference internal" href="../../result/title/narrative/">narrative</a></li>
+</ul>
+</li>
+<li class="toctree-l6 has-children"><a class="reference internal" href="../../result/description/">description</a><input class="toctree-checkbox" id="toctree-checkbox-51" name="toctree-checkbox-51" type="checkbox"/><label for="toctree-checkbox-51"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l7"><a class="reference internal" href="../../result/description/narrative/">narrative</a></li>
+</ul>
+</li>
+<li class="toctree-l6 has-children"><a class="reference internal" href="../../result/document-link/">document-link</a><input class="toctree-checkbox" id="toctree-checkbox-52" name="toctree-checkbox-52" type="checkbox"/><label for="toctree-checkbox-52"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l7 has-children"><a class="reference internal" href="../../result/document-link/title/">title</a><input class="toctree-checkbox" id="toctree-checkbox-53" name="toctree-checkbox-53" type="checkbox"/><label for="toctree-checkbox-53"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l8"><a class="reference internal" href="../../result/document-link/title/narrative/">narrative</a></li>
+</ul>
+</li>
+<li class="toctree-l7 has-children"><a class="reference internal" href="../../result/document-link/description/">description</a><input class="toctree-checkbox" id="toctree-checkbox-54" name="toctree-checkbox-54" type="checkbox"/><label for="toctree-checkbox-54"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l8"><a class="reference internal" href="../../result/document-link/description/narrative/">narrative</a></li>
+</ul>
+</li>
+<li class="toctree-l7"><a class="reference internal" href="../../result/document-link/category/">category</a></li>
+<li class="toctree-l7"><a class="reference internal" href="../../result/document-link/language/">language</a></li>
+<li class="toctree-l7"><a class="reference internal" href="../../result/document-link/document-date/">document-date</a></li>
+</ul>
+</li>
+<li class="toctree-l6"><a class="reference internal" href="../../result/reference/">reference</a></li>
+<li class="toctree-l6 has-children"><a class="reference internal" href="../../result/indicator/">indicator</a><input class="toctree-checkbox" id="toctree-checkbox-55" name="toctree-checkbox-55" type="checkbox"/><label for="toctree-checkbox-55"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l7 has-children"><a class="reference internal" href="../../result/indicator/title/">title</a><input class="toctree-checkbox" id="toctree-checkbox-56" name="toctree-checkbox-56" type="checkbox"/><label for="toctree-checkbox-56"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l8"><a class="reference internal" href="../../result/indicator/title/narrative/">narrative</a></li>
+</ul>
+</li>
+<li class="toctree-l7 has-children"><a class="reference internal" href="../../result/indicator/description/">description</a><input class="toctree-checkbox" id="toctree-checkbox-57" name="toctree-checkbox-57" type="checkbox"/><label for="toctree-checkbox-57"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l8"><a class="reference internal" href="../../result/indicator/description/narrative/">narrative</a></li>
+</ul>
+</li>
+<li class="toctree-l7 has-children"><a class="reference internal" href="../../result/indicator/document-link/">document-link</a><input class="toctree-checkbox" id="toctree-checkbox-58" name="toctree-checkbox-58" type="checkbox"/><label for="toctree-checkbox-58"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l8 has-children"><a class="reference internal" href="../../result/indicator/document-link/title/">title</a><input class="toctree-checkbox" id="toctree-checkbox-59" name="toctree-checkbox-59" type="checkbox"/><label for="toctree-checkbox-59"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l9"><a class="reference internal" href="../../result/indicator/document-link/title/narrative/">narrative</a></li>
+</ul>
+</li>
+<li class="toctree-l8 has-children"><a class="reference internal" href="../../result/indicator/document-link/description/">description</a><input class="toctree-checkbox" id="toctree-checkbox-60" name="toctree-checkbox-60" type="checkbox"/><label for="toctree-checkbox-60"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l9"><a class="reference internal" href="../../result/indicator/document-link/description/narrative/">narrative</a></li>
+</ul>
+</li>
+<li class="toctree-l8"><a class="reference internal" href="../../result/indicator/document-link/category/">category</a></li>
+<li class="toctree-l8"><a class="reference internal" href="../../result/indicator/document-link/language/">language</a></li>
+<li class="toctree-l8"><a class="reference internal" href="../../result/indicator/document-link/document-date/">document-date</a></li>
+</ul>
+</li>
+<li class="toctree-l7"><a class="reference internal" href="../../result/indicator/reference/">reference</a></li>
+<li class="toctree-l7 has-children"><a class="reference internal" href="../../result/indicator/baseline/">baseline</a><input class="toctree-checkbox" id="toctree-checkbox-61" name="toctree-checkbox-61" type="checkbox"/><label for="toctree-checkbox-61"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l8"><a class="reference internal" href="../../result/indicator/baseline/location/">location</a></li>
+<li class="toctree-l8"><a class="reference internal" href="../../result/indicator/baseline/dimension/">dimension</a></li>
+<li class="toctree-l8 has-children"><a class="reference internal" href="../../result/indicator/baseline/document-link/">document-link</a><input class="toctree-checkbox" id="toctree-checkbox-62" name="toctree-checkbox-62" type="checkbox"/><label for="toctree-checkbox-62"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l9 has-children"><a class="reference internal" href="../../result/indicator/baseline/document-link/title/">title</a><input class="toctree-checkbox" id="toctree-checkbox-63" name="toctree-checkbox-63" type="checkbox"/><label for="toctree-checkbox-63"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l10"><a class="reference internal" href="../../result/indicator/baseline/document-link/title/narrative/">narrative</a></li>
+</ul>
+</li>
+<li class="toctree-l9 has-children"><a class="reference internal" href="../../result/indicator/baseline/document-link/description/">description</a><input class="toctree-checkbox" id="toctree-checkbox-64" name="toctree-checkbox-64" type="checkbox"/><label for="toctree-checkbox-64"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l10"><a class="reference internal" href="../../result/indicator/baseline/document-link/description/narrative/">narrative</a></li>
+</ul>
+</li>
+<li class="toctree-l9"><a class="reference internal" href="../../result/indicator/baseline/document-link/category/">category</a></li>
+<li class="toctree-l9"><a class="reference internal" href="../../result/indicator/baseline/document-link/language/">language</a></li>
+<li class="toctree-l9"><a class="reference internal" href="../../result/indicator/baseline/document-link/document-date/">document-date</a></li>
+</ul>
+</li>
+<li class="toctree-l8 has-children"><a class="reference internal" href="../../result/indicator/baseline/comment/">comment</a><input class="toctree-checkbox" id="toctree-checkbox-65" name="toctree-checkbox-65" type="checkbox"/><label for="toctree-checkbox-65"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l9"><a class="reference internal" href="../../result/indicator/baseline/comment/narrative/">narrative</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l7 has-children"><a class="reference internal" href="../../result/indicator/period/">period</a><input class="toctree-checkbox" id="toctree-checkbox-66" name="toctree-checkbox-66" type="checkbox"/><label for="toctree-checkbox-66"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l8"><a class="reference internal" href="../../result/indicator/period/period-start/">period-start</a></li>
+<li class="toctree-l8"><a class="reference internal" href="../../result/indicator/period/period-end/">period-end</a></li>
+<li class="toctree-l8 has-children"><a class="reference internal" href="../../result/indicator/period/target/">target</a><input class="toctree-checkbox" id="toctree-checkbox-67" name="toctree-checkbox-67" type="checkbox"/><label for="toctree-checkbox-67"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l9"><a class="reference internal" href="../../result/indicator/period/target/location/">location</a></li>
+<li class="toctree-l9"><a class="reference internal" href="../../result/indicator/period/target/dimension/">dimension</a></li>
+<li class="toctree-l9 has-children"><a class="reference internal" href="../../result/indicator/period/target/comment/">comment</a><input class="toctree-checkbox" id="toctree-checkbox-68" name="toctree-checkbox-68" type="checkbox"/><label for="toctree-checkbox-68"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l10"><a class="reference internal" href="../../result/indicator/period/target/comment/narrative/">narrative</a></li>
+</ul>
+</li>
+<li class="toctree-l9 has-children"><a class="reference internal" href="../../result/indicator/period/target/document-link/">document-link</a><input class="toctree-checkbox" id="toctree-checkbox-69" name="toctree-checkbox-69" type="checkbox"/><label for="toctree-checkbox-69"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l10 has-children"><a class="reference internal" href="../../result/indicator/period/target/document-link/title/">title</a><input class="toctree-checkbox" id="toctree-checkbox-70" name="toctree-checkbox-70" type="checkbox"/><label for="toctree-checkbox-70"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l11"><a class="reference internal" href="../../result/indicator/period/target/document-link/title/narrative/">narrative</a></li>
+</ul>
+</li>
+<li class="toctree-l10 has-children"><a class="reference internal" href="../../result/indicator/period/target/document-link/description/">description</a><input class="toctree-checkbox" id="toctree-checkbox-71" name="toctree-checkbox-71" type="checkbox"/><label for="toctree-checkbox-71"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l11"><a class="reference internal" href="../../result/indicator/period/target/document-link/description/narrative/">narrative</a></li>
+</ul>
+</li>
+<li class="toctree-l10"><a class="reference internal" href="../../result/indicator/period/target/document-link/category/">category</a></li>
+<li class="toctree-l10"><a class="reference internal" href="../../result/indicator/period/target/document-link/language/">language</a></li>
+<li class="toctree-l10"><a class="reference internal" href="../../result/indicator/period/target/document-link/document-date/">document-date</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l8 has-children"><a class="reference internal" href="../../result/indicator/period/actual/">actual</a><input class="toctree-checkbox" id="toctree-checkbox-72" name="toctree-checkbox-72" type="checkbox"/><label for="toctree-checkbox-72"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l9"><a class="reference internal" href="../../result/indicator/period/actual/location/">location</a></li>
+<li class="toctree-l9"><a class="reference internal" href="../../result/indicator/period/actual/dimension/">dimension</a></li>
+<li class="toctree-l9 has-children"><a class="reference internal" href="../../result/indicator/period/actual/comment/">comment</a><input class="toctree-checkbox" id="toctree-checkbox-73" name="toctree-checkbox-73" type="checkbox"/><label for="toctree-checkbox-73"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l10"><a class="reference internal" href="../../result/indicator/period/actual/comment/narrative/">narrative</a></li>
+</ul>
+</li>
+<li class="toctree-l9 has-children"><a class="reference internal" href="../../result/indicator/period/actual/document-link/">document-link</a><input class="toctree-checkbox" id="toctree-checkbox-74" name="toctree-checkbox-74" type="checkbox"/><label for="toctree-checkbox-74"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l10 has-children"><a class="reference internal" href="../../result/indicator/period/actual/document-link/title/">title</a><input class="toctree-checkbox" id="toctree-checkbox-75" name="toctree-checkbox-75" type="checkbox"/><label for="toctree-checkbox-75"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l11"><a class="reference internal" href="../../result/indicator/period/actual/document-link/title/narrative/">narrative</a></li>
+</ul>
+</li>
+<li class="toctree-l10 has-children"><a class="reference internal" href="../../result/indicator/period/actual/document-link/description/">description</a><input class="toctree-checkbox" id="toctree-checkbox-76" name="toctree-checkbox-76" type="checkbox"/><label for="toctree-checkbox-76"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l11"><a class="reference internal" href="../../result/indicator/period/actual/document-link/description/narrative/">narrative</a></li>
+</ul>
+</li>
+<li class="toctree-l10"><a class="reference internal" href="../../result/indicator/period/actual/document-link/category/">category</a></li>
+<li class="toctree-l10"><a class="reference internal" href="../../result/indicator/period/actual/document-link/language/">language</a></li>
+<li class="toctree-l10"><a class="reference internal" href="../../result/indicator/period/actual/document-link/document-date/">document-date</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l5 has-children"><a class="reference internal" href="../../crs-add/">crs-add</a><input class="toctree-checkbox" id="toctree-checkbox-77" name="toctree-checkbox-77" type="checkbox"/><label for="toctree-checkbox-77"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l6"><a class="reference internal" href="../../crs-add/other-flags/">other-flags</a></li>
+<li class="toctree-l6 has-children"><a class="reference internal" href="../../crs-add/loan-terms/">loan-terms</a><input class="toctree-checkbox" id="toctree-checkbox-78" name="toctree-checkbox-78" type="checkbox"/><label for="toctree-checkbox-78"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l7"><a class="reference internal" href="../../crs-add/loan-terms/repayment-type/">repayment-type</a></li>
+<li class="toctree-l7"><a class="reference internal" href="../../crs-add/loan-terms/repayment-plan/">repayment-plan</a></li>
+<li class="toctree-l7"><a class="reference internal" href="../../crs-add/loan-terms/commitment-date/">commitment-date</a></li>
+<li class="toctree-l7"><a class="reference internal" href="../../crs-add/loan-terms/repayment-first-date/">repayment-first-date</a></li>
+<li class="toctree-l7"><a class="reference internal" href="../../crs-add/loan-terms/repayment-final-date/">repayment-final-date</a></li>
+</ul>
+</li>
+<li class="toctree-l6 has-children"><a class="reference internal" href="../../crs-add/loan-status/">loan-status</a><input class="toctree-checkbox" id="toctree-checkbox-79" name="toctree-checkbox-79" type="checkbox"/><label for="toctree-checkbox-79"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l7"><a class="reference internal" href="../../crs-add/loan-status/interest-received/">interest-received</a></li>
+<li class="toctree-l7"><a class="reference internal" href="../../crs-add/loan-status/principal-outstanding/">principal-outstanding</a></li>
+<li class="toctree-l7"><a class="reference internal" href="../../crs-add/loan-status/principal-arrears/">principal-arrears</a></li>
+<li class="toctree-l7"><a class="reference internal" href="../../crs-add/loan-status/interest-arrears/">interest-arrears</a></li>
+</ul>
+</li>
+<li class="toctree-l6"><a class="reference internal" href="../../crs-add/channel-code/">channel-code</a></li>
+</ul>
+</li>
+<li class="toctree-l5 has-children"><a class="reference internal" href="../../fss/">fss</a><input class="toctree-checkbox" id="toctree-checkbox-80" name="toctree-checkbox-80" type="checkbox"/><label for="toctree-checkbox-80"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l6"><a class="reference internal" href="../../fss/forecast/">forecast</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../../../organisation-standard/">Organisation Standard</a><input class="toctree-checkbox" id="toctree-checkbox-81" name="toctree-checkbox-81" type="checkbox"/><label for="toctree-checkbox-81"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../../../../organisation-standard/overview/">Overview</a><input class="toctree-checkbox" id="toctree-checkbox-82" name="toctree-checkbox-82" type="checkbox"/><label for="toctree-checkbox-82"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../organisation-standard/summary-table/">Organisation Standard Summary Table</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../organisation-standard/overview/organisation-file/">Organisation file</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../organisation-standard/overview/iati-organisation/">IATI Organisation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../organisation-standard/overview/organisations/">Type of Organisations</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../organisation-standard/overview/budgets/">Budgets</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../organisation-standard/overview/documents/">Documents</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../organisation-standard/example-xml/">Example Usage XML</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../../../../organisation-standard/elements/">Elements</a><input class="toctree-checkbox" id="toctree-checkbox-83" name="toctree-checkbox-83" type="checkbox"/><label for="toctree-checkbox-83"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../../../../../organisation-standard/iati-organisations/">iati-organisations</a><input class="toctree-checkbox" id="toctree-checkbox-84" name="toctree-checkbox-84" type="checkbox"/><label for="toctree-checkbox-84"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l4 has-children"><a class="reference internal" href="../../../../../organisation-standard/iati-organisations/iati-organisation/">iati-organisation</a><input class="toctree-checkbox" id="toctree-checkbox-85" name="toctree-checkbox-85" type="checkbox"/><label for="toctree-checkbox-85"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l5"><a class="reference internal" href="../../../../../organisation-standard/iati-organisations/iati-organisation/organisation-identifier/">organisation-identifier</a></li>
+<li class="toctree-l5 has-children"><a class="reference internal" href="../../../../../organisation-standard/iati-organisations/iati-organisation/name/">name</a><input class="toctree-checkbox" id="toctree-checkbox-86" name="toctree-checkbox-86" type="checkbox"/><label for="toctree-checkbox-86"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l6"><a class="reference internal" href="../../../../../organisation-standard/iati-organisations/iati-organisation/name/narrative/">narrative</a></li>
+</ul>
+</li>
+<li class="toctree-l5 has-children"><a class="reference internal" href="../../../../../organisation-standard/iati-organisations/iati-organisation/reporting-org/">reporting-org</a><input class="toctree-checkbox" id="toctree-checkbox-87" name="toctree-checkbox-87" type="checkbox"/><label for="toctree-checkbox-87"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l6"><a class="reference internal" href="../../../../../organisation-standard/iati-organisations/iati-organisation/reporting-org/narrative/">narrative</a></li>
+</ul>
+</li>
+<li class="toctree-l5 has-children"><a class="reference internal" href="../../../../../organisation-standard/iati-organisations/iati-organisation/total-budget/">total-budget</a><input class="toctree-checkbox" id="toctree-checkbox-88" name="toctree-checkbox-88" type="checkbox"/><label for="toctree-checkbox-88"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l6"><a class="reference internal" href="../../../../../organisation-standard/iati-organisations/iati-organisation/total-budget/period-start/">period-start</a></li>
+<li class="toctree-l6"><a class="reference internal" href="../../../../../organisation-standard/iati-organisations/iati-organisation/total-budget/period-end/">period-end</a></li>
+<li class="toctree-l6"><a class="reference internal" href="../../../../../organisation-standard/iati-organisations/iati-organisation/total-budget/value/">value</a></li>
+<li class="toctree-l6 has-children"><a class="reference internal" href="../../../../../organisation-standard/iati-organisations/iati-organisation/total-budget/budget-line/">budget-line</a><input class="toctree-checkbox" id="toctree-checkbox-89" name="toctree-checkbox-89" type="checkbox"/><label for="toctree-checkbox-89"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l7"><a class="reference internal" href="../../../../../organisation-standard/iati-organisations/iati-organisation/total-budget/budget-line/value/">value</a></li>
+<li class="toctree-l7"><a class="reference internal" href="../../../../../organisation-standard/iati-organisations/iati-organisation/total-budget/budget-line/narrative/">narrative</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l5 has-children"><a class="reference internal" href="../../../../../organisation-standard/iati-organisations/iati-organisation/recipient-org-budget/">recipient-org-budget</a><input class="toctree-checkbox" id="toctree-checkbox-90" name="toctree-checkbox-90" type="checkbox"/><label for="toctree-checkbox-90"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l6 has-children"><a class="reference internal" href="../../../../../organisation-standard/iati-organisations/iati-organisation/recipient-org-budget/recipient-org/">recipient-org</a><input class="toctree-checkbox" id="toctree-checkbox-91" name="toctree-checkbox-91" type="checkbox"/><label for="toctree-checkbox-91"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l7"><a class="reference internal" href="../../../../../organisation-standard/iati-organisations/iati-organisation/recipient-org-budget/recipient-org/narrative/">narrative</a></li>
+</ul>
+</li>
+<li class="toctree-l6"><a class="reference internal" href="../../../../../organisation-standard/iati-organisations/iati-organisation/recipient-org-budget/period-start/">period-start</a></li>
+<li class="toctree-l6"><a class="reference internal" href="../../../../../organisation-standard/iati-organisations/iati-organisation/recipient-org-budget/period-end/">period-end</a></li>
+<li class="toctree-l6"><a class="reference internal" href="../../../../../organisation-standard/iati-organisations/iati-organisation/recipient-org-budget/value/">value</a></li>
+<li class="toctree-l6 has-children"><a class="reference internal" href="../../../../../organisation-standard/iati-organisations/iati-organisation/recipient-org-budget/budget-line/">budget-line</a><input class="toctree-checkbox" id="toctree-checkbox-92" name="toctree-checkbox-92" type="checkbox"/><label for="toctree-checkbox-92"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l7"><a class="reference internal" href="../../../../../organisation-standard/iati-organisations/iati-organisation/recipient-org-budget/budget-line/value/">value</a></li>
+<li class="toctree-l7"><a class="reference internal" href="../../../../../organisation-standard/iati-organisations/iati-organisation/recipient-org-budget/budget-line/narrative/">narrative</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l5 has-children"><a class="reference internal" href="../../../../../organisation-standard/iati-organisations/iati-organisation/recipient-region-budget/">recipient-region-budget</a><input class="toctree-checkbox" id="toctree-checkbox-93" name="toctree-checkbox-93" type="checkbox"/><label for="toctree-checkbox-93"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l6 has-children"><a class="reference internal" href="../../../../../organisation-standard/iati-organisations/iati-organisation/recipient-region-budget/recipient-region/">recipient-region</a><input class="toctree-checkbox" id="toctree-checkbox-94" name="toctree-checkbox-94" type="checkbox"/><label for="toctree-checkbox-94"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l7"><a class="reference internal" href="../../../../../organisation-standard/iati-organisations/iati-organisation/recipient-region-budget/recipient-region/narrative/">narrative</a></li>
+</ul>
+</li>
+<li class="toctree-l6"><a class="reference internal" href="../../../../../organisation-standard/iati-organisations/iati-organisation/recipient-region-budget/period-start/">period-start</a></li>
+<li class="toctree-l6"><a class="reference internal" href="../../../../../organisation-standard/iati-organisations/iati-organisation/recipient-region-budget/period-end/">period-end</a></li>
+<li class="toctree-l6"><a class="reference internal" href="../../../../../organisation-standard/iati-organisations/iati-organisation/recipient-region-budget/value/">value</a></li>
+<li class="toctree-l6 has-children"><a class="reference internal" href="../../../../../organisation-standard/iati-organisations/iati-organisation/recipient-region-budget/budget-line/">budget-line</a><input class="toctree-checkbox" id="toctree-checkbox-95" name="toctree-checkbox-95" type="checkbox"/><label for="toctree-checkbox-95"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l7"><a class="reference internal" href="../../../../../organisation-standard/iati-organisations/iati-organisation/recipient-region-budget/budget-line/value/">value</a></li>
+<li class="toctree-l7"><a class="reference internal" href="../../../../../organisation-standard/iati-organisations/iati-organisation/recipient-region-budget/budget-line/narrative/">narrative</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l5 has-children"><a class="reference internal" href="../../../../../organisation-standard/iati-organisations/iati-organisation/recipient-country-budget/">recipient-country-budget</a><input class="toctree-checkbox" id="toctree-checkbox-96" name="toctree-checkbox-96" type="checkbox"/><label for="toctree-checkbox-96"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l6 has-children"><a class="reference internal" href="../../../../../organisation-standard/iati-organisations/iati-organisation/recipient-country-budget/recipient-country/">recipient-country</a><input class="toctree-checkbox" id="toctree-checkbox-97" name="toctree-checkbox-97" type="checkbox"/><label for="toctree-checkbox-97"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l7"><a class="reference internal" href="../../../../../organisation-standard/iati-organisations/iati-organisation/recipient-country-budget/recipient-country/narrative/">narrative</a></li>
+</ul>
+</li>
+<li class="toctree-l6"><a class="reference internal" href="../../../../../organisation-standard/iati-organisations/iati-organisation/recipient-country-budget/period-start/">period-start</a></li>
+<li class="toctree-l6"><a class="reference internal" href="../../../../../organisation-standard/iati-organisations/iati-organisation/recipient-country-budget/period-end/">period-end</a></li>
+<li class="toctree-l6"><a class="reference internal" href="../../../../../organisation-standard/iati-organisations/iati-organisation/recipient-country-budget/value/">value</a></li>
+<li class="toctree-l6 has-children"><a class="reference internal" href="../../../../../organisation-standard/iati-organisations/iati-organisation/recipient-country-budget/budget-line/">budget-line</a><input class="toctree-checkbox" id="toctree-checkbox-98" name="toctree-checkbox-98" type="checkbox"/><label for="toctree-checkbox-98"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l7"><a class="reference internal" href="../../../../../organisation-standard/iati-organisations/iati-organisation/recipient-country-budget/budget-line/value/">value</a></li>
+<li class="toctree-l7"><a class="reference internal" href="../../../../../organisation-standard/iati-organisations/iati-organisation/recipient-country-budget/budget-line/narrative/">narrative</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l5 has-children"><a class="reference internal" href="../../../../../organisation-standard/iati-organisations/iati-organisation/total-expenditure/">total-expenditure</a><input class="toctree-checkbox" id="toctree-checkbox-99" name="toctree-checkbox-99" type="checkbox"/><label for="toctree-checkbox-99"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l6"><a class="reference internal" href="../../../../../organisation-standard/iati-organisations/iati-organisation/total-expenditure/period-start/">period-start</a></li>
+<li class="toctree-l6"><a class="reference internal" href="../../../../../organisation-standard/iati-organisations/iati-organisation/total-expenditure/period-end/">period-end</a></li>
+<li class="toctree-l6"><a class="reference internal" href="../../../../../organisation-standard/iati-organisations/iati-organisation/total-expenditure/value/">value</a></li>
+<li class="toctree-l6 has-children"><a class="reference internal" href="../../../../../organisation-standard/iati-organisations/iati-organisation/total-expenditure/expense-line/">expense-line</a><input class="toctree-checkbox" id="toctree-checkbox-100" name="toctree-checkbox-100" type="checkbox"/><label for="toctree-checkbox-100"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l7"><a class="reference internal" href="../../../../../organisation-standard/iati-organisations/iati-organisation/total-expenditure/expense-line/value/">value</a></li>
+<li class="toctree-l7"><a class="reference internal" href="../../../../../organisation-standard/iati-organisations/iati-organisation/total-expenditure/expense-line/narrative/">narrative</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l5 has-children"><a class="reference internal" href="../../../../../organisation-standard/iati-organisations/iati-organisation/document-link/">document-link</a><input class="toctree-checkbox" id="toctree-checkbox-101" name="toctree-checkbox-101" type="checkbox"/><label for="toctree-checkbox-101"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l6 has-children"><a class="reference internal" href="../../../../../organisation-standard/iati-organisations/iati-organisation/document-link/recipient-country/">recipient-country</a><input class="toctree-checkbox" id="toctree-checkbox-102" name="toctree-checkbox-102" type="checkbox"/><label for="toctree-checkbox-102"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l7"><a class="reference internal" href="../../../../../organisation-standard/iati-organisations/iati-organisation/document-link/recipient-country/narrative/">narrative</a></li>
+</ul>
+</li>
+<li class="toctree-l6 has-children"><a class="reference internal" href="../../../../../organisation-standard/iati-organisations/iati-organisation/document-link/title/">title</a><input class="toctree-checkbox" id="toctree-checkbox-103" name="toctree-checkbox-103" type="checkbox"/><label for="toctree-checkbox-103"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l7"><a class="reference internal" href="../../../../../organisation-standard/iati-organisations/iati-organisation/document-link/title/narrative/">narrative</a></li>
+</ul>
+</li>
+<li class="toctree-l6 has-children"><a class="reference internal" href="../../../../../organisation-standard/iati-organisations/iati-organisation/document-link/description/">description</a><input class="toctree-checkbox" id="toctree-checkbox-104" name="toctree-checkbox-104" type="checkbox"/><label for="toctree-checkbox-104"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l7"><a class="reference internal" href="../../../../../organisation-standard/iati-organisations/iati-organisation/document-link/description/narrative/">narrative</a></li>
+</ul>
+</li>
+<li class="toctree-l6"><a class="reference internal" href="../../../../../organisation-standard/iati-organisations/iati-organisation/document-link/category/">category</a></li>
+<li class="toctree-l6"><a class="reference internal" href="../../../../../organisation-standard/iati-organisations/iati-organisation/document-link/language/">language</a></li>
+<li class="toctree-l6"><a class="reference internal" href="../../../../../organisation-standard/iati-organisations/iati-organisation/document-link/document-date/">document-date</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../namespaces-extensions/">Namespaces &amp; Extensions</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../../../codelists/">Codelists</a><input class="toctree-checkbox" id="toctree-checkbox-105" name="toctree-checkbox-105" type="checkbox"/><label for="toctree-checkbox-105"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../../../codelists/codelist-management/">IATI Codelist Management</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../../codelists/codelist-api/">Codelist API</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../../codelists/ActivityDateType/">Activity Date Type</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../../codelists/ActivityScope/">Activity Scope</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../../codelists/ActivityStatus/">Activity Status</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../../codelists/AidType/">Aid Type</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../../codelists/AidType-category/">Aid Type (category)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../../codelists/AidTypeVocabulary/">Aid Type Vocabulary</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../../codelists/BudgetIdentifier/">Budget Identifier</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../../codelists/BudgetIdentifierSector/">Budget Identifier Sector</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../../codelists/BudgetIdentifierSector-category/">Budget Identifier Sector (category)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../../codelists/BudgetIdentifierVocabulary/">Budget Identifier Vocabulary</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../../codelists/BudgetNotProvided/">Budget Not Provided</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../../codelists/BudgetStatus/">Budget Status</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../../codelists/BudgetType/">Budget Type</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../../codelists/CRSAddOtherFlags/">CRS Additional Other Flags</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../../codelists/CRSChannelCode/">CRS Channel Code</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../../codelists/CashandVoucherModalities/">Cash and Voucher Modalities</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../../codelists/CollaborationType/">Collaboration Type</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../../codelists/ConditionType/">Condition Type</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../../codelists/ContactType/">Contact Type</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../../codelists/Country/">Country</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../../codelists/Currency/">Currency</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../../codelists/DescriptionType/">Description Type</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../../codelists/DisbursementChannel/">Disbursement Channel</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../../codelists/DocumentCategory/">Document Category</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../../codelists/DocumentCategory-category/">Document Category (category)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../../codelists/EarmarkingCategory/">Earmarking Category</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../../codelists/FileFormat/">File Format</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../../codelists/FinanceType/">Finance Type</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../../codelists/FinanceType-category/">Finance Type (category)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../../codelists/FlowType/">Flow Type</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../../codelists/GazetteerAgency/">Gazetteer Agency</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../../codelists/GeographicExactness/">Geographic Exactness</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../../codelists/GeographicLocationClass/">Geographic Location Class</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../../codelists/GeographicLocationReach/">Geographic Location Reach</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../../codelists/GeographicVocabulary/">Geographic Vocabulary</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../../codelists/GeographicalPrecision/">Geographical Precision</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../../codelists/HumanitarianScopeType/">Humanitarian Scope Type</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../../codelists/HumanitarianScopeVocabulary/">Humanitarian Scope Vocabulary</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../../codelists/IATIOrganisationIdentifier/">IATI Organisation Identifier</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../../codelists/IndicatorMeasure/">Indicator Measure</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../../codelists/IndicatorVocabulary/">Indicator Vocabulary</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../../codelists/Language/">Language</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../../codelists/LoanRepaymentPeriod/">Loan Repayment Period</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../../codelists/LoanRepaymentType/">Loan Repayment Type</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../../codelists/LocationType/">Location Type</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../../codelists/LocationType-category/">Location Type (category)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../../codelists/OrganisationIdentifier/">Organisation Identifier</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../../codelists/OrganisationRegistrationAgency/">Organisation Registration Agency</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../../codelists/OrganisationRole/">Organisation Role</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../../codelists/OrganisationType/">Organisation Type</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../../codelists/OtherIdentifierType/">Other Identifier Type</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../../codelists/PolicyMarker/">Policy Marker</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../../codelists/PolicyMarkerVocabulary/">Policy Marker Vocabulary</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../../codelists/PolicySignificance/">Policy Significance</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../../codelists/PublisherType/">Publisher Type</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../../codelists/Region/">Region</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../../codelists/RegionVocabulary/">Region Vocabulary</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../../codelists/RelatedActivityType/">Related Activity Type</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../../codelists/ResultType/">Result Type</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../../codelists/ResultVocabulary/">Result Vocabulary</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../../codelists/Sector/">DAC 5 Digit Sector</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../../codelists/SectorCategory/">DAC 3 Digit Sector</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../../codelists/SectorVocabulary/">Sector Vocabulary</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../../codelists/TagVocabulary/">Tag Vocabulary</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../../codelists/TiedStatus/">Tied Status</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../../codelists/TransactionType/">Transaction Type</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../../codelists/UNSDG-Goals/">UN Sustainable Development Goals (SDG)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../../codelists/UNSDG-Targets/">UN Sustainable Development Goals (SDG) Targets</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../../codelists/VerificationStatus/">Verification Status</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../../codelists/Version/">Version</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../../codelists/Vocabulary/">Vocabulary</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../../codelists/codelist-api/">Codelist API</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../../codelists/codelist-management/">IATI Codelist Management</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../schema/">Schema</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../../../rulesets/">Rulesets</a><input class="toctree-checkbox" id="toctree-checkbox-106" name="toctree-checkbox-106" type="checkbox"/><label for="toctree-checkbox-106"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../../../rulesets/standard-ruleset/">Standard Ruleset</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../../rulesets/ruleset-spec/">IATI Ruleset Spec</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../../rulesets/ruleset-development/">Ruleset development</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../organisation-identifiers/">Organisation Identifiers</a></li>
+</ul>
+
+</div>
+</div>
+      </div>
+      
+    </div>
+  </aside>
+  <main class="main">
+    <div class="content">
+      <article role="main">
+        <label class="toc-overlay-icon toc-content-icon" for="__toc">
+          <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
+        </label>
+        <div class="section" id="narrative">
+<h1>narrative<a class="headerlink" href="#narrative" title="Permalink to this headline">¶</a></h1>
+<p><code class="docutils literal notranslate"><span class="pre">iati-activities/iati-activity/reporting-org/narrative</span></code></p>
+<p>This is the reference page for the XML element <code class="docutils literal notranslate"><span class="pre">narrative</span></code>.</p>
+<div class="section" id="definition">
+<span id="index-0"></span><h2>Definition<a class="headerlink" href="#definition" title="Permalink to this headline">¶</a></h2>
+<p>The name of the organisation. May be repeated for
+different languages.</p>
+</div>
+<div class="section" id="rules">
+<h2>Rules<a class="headerlink" href="#rules" title="Permalink to this headline">¶</a></h2>
+<p>The text in this element must be of type xsd:string.</p>
+<p>This element must occur at least once (within each parent element).</p>
+</div>
+<div class="section" id="attributes">
+<h2>Attributes<a class="headerlink" href="#attributes" title="Permalink to this headline">¶</a></h2>
+<dl id="iati-activities-iati-activity-reporting-org-narrative-xml-lang">
+<dt>@xml:lang</dt><dd><p>A code specifying the language of text in this element. It is recommended that wherever possible only codes from ISO 639-1 are used. If not present, the default language is assumed.</p>
+<p>This value should be on the <a class="reference internal" href="../../../../../codelists/Language/"><span class="doc">Language codelist</span></a>.</p>
+</dd>
+</dl>
+</div>
+<div class="section" id="example-usage">
+<h2>Example Usage<a class="headerlink" href="#example-usage" title="Permalink to this headline">¶</a></h2>
+<p>The <code class="docutils literal notranslate"><span class="pre">narrative</span></code> child element can be used to declare freetext for the <code class="docutils literal notranslate"><span class="pre">reporting-org</span></code> element.</p>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span>  <span class="nt">&lt;reporting-org</span> <span class="na">ref=</span><span class="s">"AA-AAA-123456789"</span> <span class="na">type=</span><span class="s">"40"</span> <span class="na">secondary-reporter=</span><span class="s">"0"</span><span class="nt">&gt;</span>
+   <span class="nt">&lt;narrative&gt;</span>Organisation name<span class="nt">&lt;/narrative&gt;</span>
+   <span class="nt">&lt;narrative</span> <span class="na">xml:lang=</span><span class="s">"fr"</span><span class="nt">&gt;</span>Nom de l'organisme<span class="nt">&lt;/narrative&gt;</span>
+  <span class="nt">&lt;/reporting-org&gt;</span>
+</pre></div>
+</div>
+<p>The <code class="docutils literal notranslate"><span class="pre">narrative</span></code> element can be repeated for any language additional to the default language set in <code class="docutils literal notranslate"><span class="pre">iati-activity</span></code>, by using the <code class="docutils literal notranslate"><span class="pre">xml:lang</span></code> attribute:</p>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span>  <span class="nt">&lt;reporting-org</span> <span class="na">ref=</span><span class="s">"AA-AAA-123456789"</span> <span class="na">type=</span><span class="s">"40"</span> <span class="na">secondary-reporter=</span><span class="s">"0"</span><span class="nt">&gt;</span>
+   <span class="nt">&lt;narrative&gt;</span>Organisation name<span class="nt">&lt;/narrative&gt;</span>
+   <span class="nt">&lt;narrative</span> <span class="na">xml:lang=</span><span class="s">"fr"</span><span class="nt">&gt;</span>Nom de l'organisme<span class="nt">&lt;/narrative&gt;</span>
+  <span class="nt">&lt;/reporting-org&gt;</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="changelog">
+<h2>Changelog<a class="headerlink" href="#changelog" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id1">
+<h3>2.01<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
+<div class="line-block">
+<div class="line">The <code class="docutils literal notranslate"><span class="pre">narrative</span></code> element was introduced in 2.01.</div>
+</div>
+</div>
+</div>
+<div class="section" id="developer-tools">
+<h2>Developer tools<a class="headerlink" href="#developer-tools" title="Permalink to this headline">¶</a></h2>
+<p>Find the source of this documentation on github:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/IATI/IATI-Schemas/blob/version-2.03/iati-common.xsd#L27">Schema</a></p></li>
+<li><p><a class="reference external" href="https://github.com/IATI/IATI-Extra-Documentation/blob/version-2.03/en/activity-standard/iati-activities/iati-activity/reporting-org/narrative.rst">Extra Documentation</a></p></li>
+</ul>
+</div>
+</div>
+
+      </article>
+      <footer>
+        
+        <div class="related-pages">
+          <a class="next-page" href="../../title/">
+              <div class="page-info">
+                <div class="context">
+                  <span>Next</span>
+                </div>
+                <div class="title">title</div>
+              </div>
+              <svg><use href="#svg-arrow-right"></use></svg>
+            </a>
+          <a class="prev-page" href="../">
+              <svg><use href="#svg-arrow-right"></use></svg>
+              <div class="page-info">
+                <div class="context">
+                  <span>Previous</span>
+                </div>
+                
+                <div class="title">reporting-org</div>
+                
+              </div>
+            </a>
+        </div>
+
+        <div class="related-information">
+              Copyright &#169; Development Initiatives, licensed under CC-BY 4.0
+            |
+            Built with <a href="https://www.sphinx-doc.org/">Sphinx</a>
+              and
+              <a class="muted-link" href="https://pradyunsg.me">@pradyunsg</a>'s
+              <a href="https://github.com/pradyunsg/furo">Furo theme</a>.
+            |
+            <a class="muted-link" href="../../../../../_sources/activity-standard/iati-activities/iati-activity/reporting-org/narrative.rst.txt"
+               rel="nofollow">
+              Show Source
+            </a>
+        </div>
+        
+      </footer>
+    </div>
+    <aside class="toc-drawer">
+      
+      
+      <div class="toc-sticky toc-scroll">
+        <div class="toc-title-container">
+          <span class="toc-title">
+            Contents
+          </span>
+        </div>
+        <div class="toc-tree-container">
+          <div class="toc-tree">
+            <ul>
+<li><a class="reference internal" href="#">narrative</a><ul>
+<li><a class="reference internal" href="#definition">Definition</a></li>
+<li><a class="reference internal" href="#rules">Rules</a></li>
+<li><a class="reference internal" href="#attributes">Attributes</a></li>
+<li><a class="reference internal" href="#example-usage">Example Usage</a></li>
+<li><a class="reference internal" href="#changelog">Changelog</a><ul>
+<li><a class="reference internal" href="#id1">2.01</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#developer-tools">Developer tools</a></li>
+</ul>
+</li>
+</ul>
+
+          </div>
+        </div>
+      </div>
+      
+      
+    </aside>
+  </main>
+</div>
+    <script id="documentation_options" data-url_root="../../../../../" src="../../../../../_static/documentation_options.js"></script>
+    <script src="../../../../../_static/jquery.js"></script>
+    <script src="../../../../../_static/underscore.js"></script>
+    <script src="../../../../../_static/doctools.js"></script>
+    <script src="../../../../../_static/scripts/main.js?digest=e931d09b2a40c1bb82b542effe772014573baf67"></script></body>
+</html>
