@@ -98,9 +98,6 @@ Changelog
 ^^^^
 The optional ``total-expenditure`` element was `added <http://support.iatistandard.org/entries/83404469-Add-Total-Expenditure-Element-To-Organisation-File>`__.
 
-.. meta::
-  :order: 0
-
 
 Developer tools
 ~~~~~~~~~~~~~~~

@@ -22,5 +22,3 @@ Reference
    schema
    rulesets
 
-.. meta::
-  :order: 6

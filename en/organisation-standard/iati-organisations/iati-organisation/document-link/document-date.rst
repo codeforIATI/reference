@@ -72,7 +72,6 @@ Example Usage
 	:language: xml
 	:start-after: <!--document-link starts-->
 	:end-before: <!--document-link ends-->
-	:emphasize-lines: 7
 
 | The ``document-date`` element should only be used once for each ``document-link`` element.
 
@@ -82,9 +81,6 @@ Changelog
 2.02
 ^^^^
 Added the optional ``document-date`` element was `added <http://support.iatistandard.org/entries/92707776-Document-Dates>`__.
-
-.. meta::
-  :order: 5
 
 
 Developer tools

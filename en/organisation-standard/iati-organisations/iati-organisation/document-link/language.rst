@@ -102,9 +102,6 @@ Addition of a ``@language`` element as a child of the ``document-link`` element:
 document-link/language/text() (0..1) - The ISO 639 code for the language
 of the document
 
-.. meta::
-  :order: 4
-
 
 Developer tools
 ~~~~~~~~~~~~~~~

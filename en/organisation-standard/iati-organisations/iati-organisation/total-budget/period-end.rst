@@ -72,8 +72,6 @@ Example ``period-end`` of ``total-budget`` for an ``iati-organisation``.
 	:start-after: <!--total-budget starts-->
 	:end-before: <!--total-budget ends-->
 
-.. meta::
-  :order: 1
 
 
 Developer tools

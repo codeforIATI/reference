@@ -36,8 +36,6 @@ This element must occur no more than once (within each parent element).
 
 
 
-.. meta::
-  :order: 2
 
 
 Developer tools
