@@ -1,6 +1,5 @@
 #!/bin/bash
-# This script pulls in the Developer Documetnation and Guidance to build the full iatistandard.org website
-# See the README for more information
+
 ./gen_rst.sh || exit $?
 ./gen_html.sh || exit $?
 
