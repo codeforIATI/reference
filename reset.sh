@@ -9,7 +9,7 @@ unlink iatirulesets
 
 git clone --branch version-2.03 https://github.com/IATI/IATI-Codelists.git
 
-git clone --branch version-2.03 https://github.com/IATI/IATI-Extra-Documentation.git
+git clone --branch version-2.03 https://github.com/codeforIATI/IATI-Extra-Documentation.git
 cd IATI-Extra-Documentation
 # reset to an old version that has working ToCs
 git reset --hard 84bcc7bd
