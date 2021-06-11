@@ -8,9 +8,6 @@ rm -rf docs
 unlink iatirulesets
 
 git clone --branch version-2.03 https://github.com/IATI/IATI-Codelists.git
-cd IATI-Codelists
-git clone https://github.com/codeforIATI/IATI-Codelists-NonEmbedded.git
-cd ..
 
 git clone --branch version-2.03 https://github.com/codeforIATI/IATI-Extra-Documentation.git
 cd IATI-Extra-Documentation
