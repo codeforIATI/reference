@@ -2,7 +2,8 @@
 set -o nounset
 
 # Remove docs (the output directory), and recreate
-rm -r docs/*
+rm -rf docs
+mkdir docs
 
 # Generate csvs etc. from codelists
 cd IATI-Codelists || exit 1
